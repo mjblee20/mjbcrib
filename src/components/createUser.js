@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class createUser extends Component {
+class CreateUser extends Component {
   constructor(props) {
     super(props);
 
@@ -18,4 +18,4 @@ class createUser extends Component {
   }
 }
 
-export default createUser.js
+export default CreateUser
