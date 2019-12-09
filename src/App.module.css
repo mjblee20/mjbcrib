@@ -1,0 +1,60 @@
+.customContainer {
+  padding: 0px;
+}
+
+.section {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-family: 'Righteous', cursive;
+}
+
+.sectionTitleRow {
+  display: flex;
+  justify-content: center;
+  margin:50px;
+}
+
+.sectionTitle {
+  text-align: center;
+  padding: 10px;
+  width:300px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.home {
+  composes: section;
+  /* background: rgba(130, 138, 149, 1); */
+  height: 500px;
+}
+
+.about {
+  /* background: rgba(206, 234, 247, 1); */
+  height: 400px;
+  composes: section;
+}
+
+.productivity {
+  /* background: rgba(233, 227, 230, 1); */
+  height: 700px;
+  composes: section;
+  /* background-image: url('/src/images/bonefire.png'); */
+}
+
+.portfolio {
+  
+  /* background: rgba(178, 178, 178, 1); */
+  height: 400px;
+  composes: section;
+  /* background-image: url('/src/images/bonefire.png'); */
+}
+
+.contact {
+  
+  /* background: rgba(204, 215, 228, 1); */
+  height: 400px;
+  composes: section;
+  /* background-image: url('/src/images/bonefire.png'); */
+}
+

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai|Dancing+Script|Kalam|Long+Cang|Righteous|Zhi+Mang+Xing&display=swap');
+
+.bubbles {
+  /* font-family: 'Baloo Bhai', cursive; */
+  /* font-family: 'Dancing Script', cursive; */
+  /* font-family: 'Long Cang', cursive; */
+  /* font-family: 'Kalam', cursive; */
+  /* font-family: 'Righteous', cursive; */
+  /* font-family: 'Zhi Mang Xing', cursive; */
+  padding: 20px;
+  margin: 5px;
+}
+
+.bubbles:hover {
+  font-size: 30;
+}
+
+.bubbleClump {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 40%;
+  height: 80%;
+  margin: auto;
+}

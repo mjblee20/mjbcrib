@@ -1,24 +1,44 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
+
+
+import Navbar from './templates/NavBar/NavBar';
+import Home from './pages/Home';
+import Habit from './pages/Habit';
+import Exercise from './pages/Exercise';
+import User from './pages/User';
+import Portfolio from './pages/Portfolio/Portfolio';
+import Contact from './pages/Contact/Contact';
+import About from './pages/About/About';
+import Blog from './pages/Blog/Blog';
+
+import EditExercise from './components/editExercise'
+import CreateExercise from './components/createExercise';
+import CreateUser from './components/createUser.js';
+
+// Styling Imports
+import Styles from './App.module.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <br />
+      <Router>
+        <Route path='/' exact component={Home} />
+        <Route path='/edit/:id' component={EditExercise} />
+        <Route path='/create' component={CreateExercise} />
+        <Route path='/user' component={CreateUser} />
+
+        <Route path='/blog' component={Blog} />
+        <Route path='/about' component={About} />
+        <Route path='/portfolio' component={Portfolio} />
+        <Route path='/contact' component={Contact} />
+        <Route path='/habits' component={Habit} />
+        <Route path='/exercises' component={Exercise} />
+        <Route path='/users' component={User} />
+      </Router>
     </div>
   );
 }

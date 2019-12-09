@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai|Dancing+Script|Kalam|Long+Cang|Righteous|Zhi+Mang+Xing&display=swap');
+
+.customBrand {
+  
+  font-family: 'Zhi Mang Xing', cursive;
+}
+
+.customLinks {
+  /* font-family: 'Baloo Bhai', cursive; */
+  /* font-family: 'Dancing Script', cursive; */
+  /* font-family: 'Long Cang', cursive; */
+  /* font-family: 'Kalam', cursive; */
+  font-family: 'Righteous', cursive;
+}

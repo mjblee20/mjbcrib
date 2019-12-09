@@ -2,19 +2,19 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-const habitSchema = new Schema({
-  habit: {
+const knowledgeSchema = new Schema({
+  language: {
     type: String,
     required: true,
   }, 
-  type: {
-    type: String,
+  time: {
+    type: Number,
     required: true,
   }
 }, {
   timestamps: true,
 }) 
 
-const Habit = mongoose.model('Habit', habitSchema);
+const knowledge = mongoose.model('knowledge', knowledgeSchema);
 
-module.exports = Habit;
+module.exports = knowledge;
