@@ -14,8 +14,8 @@ import About from './pages/About/About';
 import Blog from './pages/Blog/Blog';
 
 // import EditExercise from './components/EditExercise'
-import CreateExercise from './components/CreateExercise';
-// import CreateUser from './components/CreateUser.js';
+// import CreateExercise from './components/CreateExercise';
+// import CreateUser from './components/CreateUser';
 
 // Styling Import
 import Styles from './App.module.css';
@@ -28,7 +28,7 @@ function App() {
       <Router>
         <Route path='/' exact component={Home} />
         {/* <Route path='/edit/:id' component={EditExercise} /> */}
-        <Route path='/create' component={CreateExercise} />
+        {/* <Route path='/create' component={CreateExercise} /> */}
         {/* <Route path='/user' component={CreateUser} /> */}
 
         <Route path='/blog' component={Blog} />
