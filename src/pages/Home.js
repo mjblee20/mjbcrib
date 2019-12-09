@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
-import KnowledgeCluster from './../templates/KnowledgeCluster/KnowledgeCluster'
+import KnowledgeCluster from './../templates/KnowledgeCluster/KnowledgeCluster';
+import CreateExercise from '../components/CreateExercise';
 
-export class Home extends Component {
+class Home extends Component {
   render() {
     return (
-      <div>
-        <KnowledgeCluster/>
+      <div> 
+        <KnowledgeCluster />
+        <CreateExercise />
       </div>
     )
   }

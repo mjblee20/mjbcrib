@@ -13,9 +13,9 @@ import Contact from './pages/Contact/Contact';
 import About from './pages/About/About';
 import Blog from './pages/Blog/Blog';
 
-import EditExercise from './components/editExercise'
-import CreateExercise from './components/createExercise';
-import CreateUser from './components/createUser.js';
+import EditExercise from './components/EditExercise'
+import CreateExercise from './components/CreateExercise';
+import CreateUser from './components/CreateUser.js';
 
 // Styling Import
 import Styles from './App.module.css';

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export class createUser extends Component {
+class createUser extends Component {
   constructor(props) {
     super(props);
 
@@ -8,7 +8,7 @@ export class createUser extends Component {
       username: '',
     }
   }
-  
+
   render() {
     return (
       <div>

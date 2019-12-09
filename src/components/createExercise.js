@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css'
 
-export class createExercise extends Component {
+class CreateExercise extends Component {
   constructor(props) {
     super(props);
     
@@ -64,9 +64,6 @@ export class createExercise extends Component {
     }
 
     console.log(exercise);
-
-    // return the user to homepage after submitting the exercise
-    window.location = '/';
   }
 
   render() {
@@ -124,4 +121,4 @@ export class createExercise extends Component {
   }
 }
 
-export default createExercise.component
+export default CreateExercise;
