@@ -17,12 +17,12 @@ import EditExercise from './components/editExercise'
 import CreateExercise from './components/createExercise';
 import CreateUser from './components/createUser.js';
 
-// Styling Imports
+// Styling Import
 import Styles from './App.module.css';
 
 function App() {
   return (
-    <div>
+    <div className='container'>
       <Navbar />
       <br />
       <Router>
