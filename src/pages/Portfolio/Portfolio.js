@@ -8,10 +8,6 @@ import ListGroup from 'react-bootstrap/ListGroup'
 
 // import Styles from './Portfolio.module.css';
 import AppStyles from './../../App.module.css';
-import ExerciseLog from './../../components/Exercise/ExerciseLog';
-import User from './../../components/Exercise/User';
-
-
 class Portfolio extends React.Component {
   constructor(props) {
     super(props);
@@ -32,25 +28,36 @@ class Portfolio extends React.Component {
           <h2 className={AppStyles.sectionTitle}>Portfolio</h2>
         </Row>
 
-        {/* get from database and populate the section with up to 3 projects */}
+        <h4>Exercise Log</h4>
+        <ListGroup horizontal>
+          <ListGroup.Item href="/exercises" action variant='info'>Exercise Log</ListGroup.Item>
+          <ListGroup.Item href="/users" action variant='info'>User Log</ListGroup.Item>
+        </ListGroup>
+
+        <h4>Productivity</h4>
+        <ListGroup horizontal>
+          <ListGroup.Item href="#" action variant='info'>ToDo List</ListGroup.Item>
+          {/* TODO: ToDo List */}
+          <ListGroup.Item href="#" action variant='info'>Calendar</ListGroup.Item>
+          {/* TODO: Calendar */}
+        </ListGroup>
+
+      {/* get from database and populate the section with up to 3 projects */}
 
         {/* allow adding to database with new projects */}
 
         {/* TODO: List of projects in card formats */}
         {/* TODO: Button for every card to github and the page they are located */}
         {/* TODO: Maybe scrap github to grab information for the newest projects etc. */}
-        <h4>Exercise Log App</h4>
-        <ListGroup horizontal>
-          <ListGroup.Item href="/exercises" action variant='info'>Exercise Log</ListGroup.Item>
-          <ListGroup.Item href="/users" action variant='info'>User Log</ListGroup.Item>
-        </ListGroup>
 
+        <h4>Projects</h4>
         <Row>
           <Col>
           
           </Col>
 
           <Col>
+
           </Col>
 
           <Col>

@@ -23,12 +23,6 @@
   border-radius: 15px;
 }
 
-.home {
-  composes: section;
-  /* background: rgba(130, 138, 149, 1); */
-  height: 500px;
-}
-
 .about {
   /* background: rgba(206, 234, 247, 1); */
   height: 400px;
