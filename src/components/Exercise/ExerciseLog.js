@@ -12,9 +12,9 @@ const Exercise = props => (
     <td>{props.exercise.duration}</td>
     <td>{props.exercise.date.substring(0,10)}</td>
     <td>
-      {/* <Link to={'/edit/' + props.exercise._id}>Edit</Link> | <Button className='btn btn-danger' onClick={props.delete(props.exercise._id)}>Delete</Button> */}
+      <Button href={'exercises/edit/' + props.exercise._id}>Edit</Button> | <Button className='btn btn-danger' onClick={() => props.delete(props.exercise._id)}>Delete</Button>
     </td>
-  </tr>
+  </tr> 
 )
 
 export class ExerciseLog extends Component {

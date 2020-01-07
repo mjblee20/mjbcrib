@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import CreateUser from './../components/CreateUser';
+import CreateUser from './../Exercise/CreateUser';
 export class User extends Component { 
 
   render() {

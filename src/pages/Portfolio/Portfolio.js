@@ -8,7 +8,9 @@ import ListGroup from 'react-bootstrap/ListGroup'
 
 // import Styles from './Portfolio.module.css';
 import AppStyles from './../../App.module.css';
-import from './../../components/Exercise/'
+import ExerciseLog from './../../components/Exercise/ExerciseLog';
+import User from './../../components/Exercise/User';
+
 
 class Portfolio extends React.Component {
   constructor(props) {
@@ -37,10 +39,10 @@ class Portfolio extends React.Component {
         {/* TODO: List of projects in card formats */}
         {/* TODO: Button for every card to github and the page they are located */}
         {/* TODO: Maybe scrap github to grab information for the newest projects etc. */}
+        <h4>Exercise Log App</h4>
         <ListGroup horizontal>
-          <h4>Exercise Log App</h4>
-          <ListGroup.Item>Exercise Log</ListGroup.Item>
-          <ListGroup.Item>User Log</ListGroup.Item>
+          <ListGroup.Item href="/exercises" action variant='info'>Exercise Log</ListGroup.Item>
+          <ListGroup.Item href="/users" action variant='info'>User Log</ListGroup.Item>
         </ListGroup>
 
         <Row>

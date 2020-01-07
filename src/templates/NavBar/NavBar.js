@@ -23,8 +23,6 @@ class NavBar extends React.Component {
                 <Nav.Link href='/blog'  className={Styles.customLinks}>Blog</Nav.Link>
                 <Nav.Link href='/portfolio'  className={Styles.customLinks}>Portfolio</Nav.Link>
                 <Nav.Link href='/contact'  className={Styles.customLinks}>Contact</Nav.Link>
-                <Nav.Link href='/exercises' className={Styles.customLinks}>Exercises</Nav.Link>
-                <Nav.Link href='/users' className={Styles.customLinks}>CreateUser</Nav.Link>
                 
               </Nav>
             </Navbar.Collapse>
