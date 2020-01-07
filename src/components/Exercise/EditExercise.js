@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css'
 
-class CreateExercise extends Component {
+class EditExercise extends Component {
   constructor(props) {
     super(props);
     
@@ -23,10 +24,26 @@ class CreateExercise extends Component {
   }
 
   componentDidMount() {
-    this.setState({
-      users: ['testUser'],
-      username: 'testUser'
+    axios.get('http://localhost:5000/exercises/'+this.props.match.params.id)
+    .then(res => {
+      this.setState({
+        username: res.data.username,
+        description: res.data.description,
+        duration: res.data.duration,
+        date: new Date(res.data.date),
+      })
     })
+    .catch(err => console.log(err))
+
+    axios.get('http://localhost:5000/users/')
+    .then(res => {
+      if (res.data.length > 0) {
+        this.setState({
+          users: res.data.map(user => user.username),
+        })
+      }
+    })
+    .catch(err => console.log(err))
   }
 
   onChangeUsername(event) {
@@ -63,13 +80,16 @@ class CreateExercise extends Component {
       date: this.state.date,
     }
 
-    console.log(exercise);
+    axios.post('http://localhost:5000/exercises/update/'+this.props.match.params.id, exercise)
+    .then(res => console.log(res.data))
+    .catch(err => console.log(err))
+    console.log(exercise)
   }
 
   render() {
     return (
       <div>
-        <h3>Create a New Exercise</h3>
+        <h3>Edit Exercise</h3>
         <form onSubmit={this.onSubmit}>
           <div className='form-group'>
             <label>Username: </label>
@@ -81,7 +101,7 @@ class CreateExercise extends Component {
               onChange={this.onChangeUsername}
             >
               {this.state.users.map((user) => {
-                return <option key={user} value={user}>{user}</option>
+                return <option key={user} value={user}> {user} </option>
               })}
             </select>
           </div>
@@ -113,7 +133,7 @@ class CreateExercise extends Component {
             </div>
           </div>
           <div className='form-group'>
-            <input type='submit' value='create exercise log' className='btn btn-primary' />
+            <input type='submit' value='edit exercise log' className='btn btn-primary' />
           </div>
         </form>
       </div>
@@ -121,4 +141,4 @@ class CreateExercise extends Component {
   }
 }
 
-export default CreateExercise;
+export default EditExercise

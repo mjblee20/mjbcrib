@@ -1,11 +1,11 @@
 import React from 'react';
 
 import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
+// import Button from 'react-bootstrap/Button';
+// import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
-import Styles from './Contact.module.css';
+// import Styles from './Contact.module.css';
 import AppStyles from './../../App.module.css';
 
 class Contact extends React.Component {

@@ -9,10 +9,13 @@
   /* font-family: 'Zhi Mang Xing', cursive; */
   padding: 20px;
   margin: 5px;
+  /* transition: width 0.5s, height 0.5s; */
 }
 
 .bubbles:hover {
   font-size: 30;
+  width: 200px;
+  height: 200px;
 }
 
 .bubbleClump {

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import Styles from './Blog.module.css';
+// import Styles from './Blog.module.css';
 import AppStyles from './../../App.module.css';
 
 export class Blog extends Component {
