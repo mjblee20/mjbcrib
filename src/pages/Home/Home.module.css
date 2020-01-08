@@ -1,7 +1,17 @@
-titleBox {
+.titleHead {
   text-align: center;
 }
 
-titleHead {
+.description {
   text-align: center;
+}
+
+.btnRightAlign {
+  display:flex;
+  justify-content: flex-end;
+}
+
+.portfolioBtn {
+  text-align: center;
+  width: 200px;
 }
