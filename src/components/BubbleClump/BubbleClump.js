@@ -5,20 +5,26 @@ import Row from 'react-bootstrap/Row';
 
 import Styles from './BubbleClump.module.css';
 class BubbleClump extends Component {
-  state = {
-    skills: ['MongoDB', 'Javascript', 'React.js', 'CSS', 'HTML', 'GraphQL', 'Node.js', 'Express.js']
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      skillset: ['MongoDB', 'Javascript', 'React.js', 'CSS', 'HTML', 'GraphQL', 'Node.js', 'Express.js']
+    }
+  }
+  
+  componentDidMount() {
+    console.log('happy');
   }
   
   render() {
-    console.log('Rendering Bubble')
-
     return (
       <div>
         <Row>
           <span className={Styles.bubbleClump}>
             {/* TODO: This should be reading from the database and loading page with info */}
             {
-              this.state.skills.map(element => {
+              this.state.skillset.map(element => {
                 return (<Button variant='light' type='Button' className={Styles.bubbles}>{element}</Button>);
               })
             }

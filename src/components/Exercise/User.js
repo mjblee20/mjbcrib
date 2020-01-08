@@ -7,7 +7,7 @@ export class User extends Component {
     return (
       <div>
         <h1>Users</h1>
-
+        {/* TODO: Create a list of all users */}
         <CreateUser />
       </div>
     )
