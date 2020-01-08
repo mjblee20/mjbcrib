@@ -14,8 +14,7 @@
 
 .bubbles:hover {
   font-size: 30;
-  width: 200px;
-  height: 200px;
+  background-color: goldenrod;
 }
 
 .bubbleClump {
