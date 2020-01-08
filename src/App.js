@@ -7,7 +7,7 @@ import Navbar from './templates/NavBar/NavBar';
 import Home from './pages/Home/Home';
 // import Habit from './pages/Habit';
 import Portfolio from './pages/Portfolio/Portfolio';
-import Contact from './pages/Contact/Contact';
+import Resume from './pages/Resume/Resume';
 import About from './pages/About/About';
 import Blog from './pages/Blog/Blog';
 import EditExercise from './components/Exercise/EditExercise'
@@ -33,7 +33,7 @@ function App() {
 
         <Route path='/portfolio' component={Portfolio} />
 
-        <Route path='/contact' component={Contact} />
+        <Route path='/resume' component={Resume} />
 
 
         {/* This Section is moved to Portfolio */}
