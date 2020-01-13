@@ -36,10 +36,8 @@ class Portfolio extends React.Component {
 
         <h4>Productivity</h4>
         <ListGroup horizontal>
-          <ListGroup.Item href="#" action variant='info'>ToDo List</ListGroup.Item>
-          {/* TODO: ToDo List */}
-          <ListGroup.Item href="#" action variant='info'>Calendar</ListGroup.Item>
-          {/* TODO: Calendar */}
+          <ListGroup.Item href="/todo" action variant='info'>ToDo List</ListGroup.Item>
+          <ListGroup.Item href="/calendar" action variant='info'>Calendar</ListGroup.Item>
         </ListGroup>
 
       {/* get from database and populate the section with up to 3 projects */}

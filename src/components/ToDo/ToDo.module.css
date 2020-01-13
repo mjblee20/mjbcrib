@@ -1,0 +1,10 @@
+#to-do-list {
+  position: relative;
+}
+
+.removeBtn {
+  height: 20px;
+  font-size: 8px;
+  padding:5px;
+  vertical-align: middle;
+}

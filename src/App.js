@@ -15,6 +15,9 @@ import CreateExercise from './components/Exercise/CreateExercise';
 import CreateUser from './components/Exercise/CreateUser';
 import ExerciseLog from './components/Exercise/ExerciseLog';
 import User from './components/Exercise/User';
+import Todo from './components/ToDo/ToDo';
+import CalendarTab from './components/CalendarTab/CalendarTab'
+
 
 // Styling Import
 // import Styles from './App.module.css';
@@ -44,6 +47,8 @@ function App() {
         <Route path='/users' component={User} />
         <Route path='/users/add' component={CreateUser} />
 
+        <Route path='/todo' component={Todo} />
+        <Route path='/calendar' component={CalendarTab} />
         {/* <Route path='/habits' component={Habit} /> */}
       </Router>
     </div>
