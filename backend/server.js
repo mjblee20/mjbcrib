@@ -11,7 +11,6 @@ const port = process.env.PORT || 5000
 
 // Middleware Functions
 app.use(cors());
-app.use()
 app.use(express.json());
 
 // Setting up connection to the MongDB Atlas

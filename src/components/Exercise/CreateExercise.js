@@ -25,7 +25,7 @@ class CreateExercise extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/users/')
+    axios.get('/users/')
     .then(res => {
       if (res.data.length > 0) {
         this.setState({
@@ -72,7 +72,7 @@ class CreateExercise extends Component {
 
     
 
-    axios.post('http://localhost:5000/exercises/add', exercise)
+    axios.post('/exercises/add', exercise)
     .then(res => console.log(res.data))
     .catch(err => console.log(err))
     // refreshes the page with the most recent exercise addition

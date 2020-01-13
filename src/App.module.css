@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai|Dancing+Script|Kalam|Long+Cang|Righteous|Zhi+Mang+Xing&display=swap');
+
+.customFont1 {
+  font-family: 'Baloo Bhai', cursive;
+  text-align: center;
+}
+
+.customFont2 {
+  font-family: 'Kalam', cursive;
+}
+
+.customFont3 {
+  font-family: 'Long Cang', cursive;
+}
+
+.customFont4 {
+  font-family: 'Dancing Script', cursive;
+}
+
 .customContainer {
   padding: 0px;
 }
@@ -37,7 +56,6 @@
 }
 
 .portfolio {
-  
   /* background: rgba(178, 178, 178, 1); */
   height: 400px;
   composes: section;
@@ -45,7 +63,6 @@
 }
 
 .contact {
-  
   /* background: rgba(204, 215, 228, 1); */
   height: 400px;
   composes: section;
