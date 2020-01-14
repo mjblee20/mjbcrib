@@ -4,7 +4,7 @@ import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-import Styles from './NavBar.module.css';
+import Styles from './AppNavBar.module.css';
 
 class AppNavBar extends React.Component {
   render() {
