@@ -9,12 +9,14 @@ const bodyParser = require('body-parser');
 require('dotenv').config();
 
 const app = express();
-const port = process.env.PORT || 5000;
-
-app.use(express.static(path.join(__dirname, 'public')));
+// var nodeEnv = process.env.NODE_ENV || 'development';
+var port = process.env.PORT || 3001;
+var host = process.env.HOST || '0.0.0.0';
 
 // Middleware Functions
 app.use(cors());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 app.use(express.json());
 
 
@@ -50,6 +52,6 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-app.listen(port, () => {
-  console.log(`Server is running on port: ${port}`);
-})
+app.listen(port, host, function() {
+  console.log(`api running on port ${port}`);
+ });

@@ -29,7 +29,7 @@ export class ExerciseLog extends Component {
   }
 
   componentDidMount() {
-    axios.get('exercises/')
+    axios.get('/exercises/')
     .then(res => {
       console.log('load exercises');
       this.setState({
@@ -40,7 +40,7 @@ export class ExerciseLog extends Component {
   }
 
   delete(id) {
-    axios.delete('exercises/'+id)
+    axios.delete('/exercises/'+id)
     .then(res => {
       console.log(res.data);
       this.setState({
