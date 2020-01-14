@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 import Styles from './NavBar.module.css';
 
-class NavBar extends React.Component {
+class AppNavBar extends React.Component {
   render() {
     return(
         <Navbar fixed='top' bg='dark' variant='dark' expand='sm' className='d-flex justify-content-between'>
@@ -23,7 +23,6 @@ class NavBar extends React.Component {
                 <Nav.Link href='/blog'  className={Styles.customLinks}>Blog</Nav.Link>
                 <Nav.Link href='/portfolio'  className={Styles.customLinks}>Portfolio</Nav.Link>
                 <Nav.Link href='/resume'  className={Styles.customLinks}>Resume</Nav.Link>
-                
               </Nav>
             </Navbar.Collapse>
           </div>
@@ -32,4 +31,4 @@ class NavBar extends React.Component {
     )
   }
 }
-export default NavBar;
+export default AppNavBar;

@@ -1,5 +1,5 @@
 const router = require('express').Router();
-let Habit = require('../models/habit.model');
+let Habit = require('../../models/habit.model');
 
 router.route('/').get((req, res) => {
   Habit.find()

@@ -25,7 +25,7 @@ class CreateExercise extends Component {
   }
 
   componentDidMount() {
-    axios.get('/users/')
+    axios.get('users/')
     .then(res => {
       if (res.data.length > 0) {
         this.setState({
