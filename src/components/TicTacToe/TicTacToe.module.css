@@ -6,7 +6,7 @@ ol, ul {
   padding-left: 30px;
 }
 
-.board-row:after {
+.boardRow:after {
   clear: both;
   content: "";
   display: table;
@@ -16,12 +16,12 @@ ol, ul {
   margin-bottom: 10px;
 }
 
-.win-square {
+.winSquare {
   background: cyan;
 }
 
 .square {
-  background: #fff;
+  background: gray;
   border: 1px solid #999;
   float: left;
   font-size: 24px;
@@ -39,7 +39,7 @@ ol, ul {
   outline: none;
 }
 
-.kbd-navigation .square:focus {
+.kbdNavigation .square:focus {
   background: #ddd;
 }
 
@@ -48,10 +48,10 @@ ol, ul {
   flex-direction: row;
 }
 
-.game-info {
+.gameInfo {
   margin-left: 20px;
 }
 
-.no-bull {
+.noBull {
   list-style-type: none;
 }

@@ -16,7 +16,8 @@ import CreateUser from './components/Exercise/CreateUser';
 import ExerciseLog from './components/Exercise/ExerciseLog';
 import User from './components/Exercise/User';
 import Todo from './components/ToDo/ToDo';
-import CalendarTab from './components/CalendarTab/CalendarTab'
+import CalendarTab from './components/CalendarTab/CalendarTab';
+import TicTacToe from './components/TicTacToe/TicTacToe';
 
 
 // Styling Import
@@ -49,6 +50,7 @@ function App() {
 
         <Route path='/todo' component={Todo} />
         <Route path='/calendar' component={CalendarTab} />
+        <Route path='/tictactoe' component={TicTacToe} />
         {/* <Route path='/habits' component={Habit} /> */}
       </Router>
     </div>

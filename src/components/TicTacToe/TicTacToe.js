@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import classes from './TicTacToe.module.css';
+import Styles from './TicTacToe.module.css';
+
+import Button from 'react-bootstrap/Button';
 
 // {/* A JSX comment looks like this */}
 
@@ -10,14 +12,14 @@ export function Square(props) {
   return (
     // {/* When this.setState is called in a component, React auto-updates the child components inside of it as well. */}
 
-    <button 
+    <Button 
       key = {props.value}
-      className="square" 
+      className={Styles.square}
       onClick={props.onClick}
     >
       {/* Retrieving the data from variable value in the props of the React Component */}
       {props.value}
-    </button>
+    </Button>
   );
 }
 
@@ -74,7 +76,7 @@ export class Board extends React.Component {
         {
           board.row.map((value, index) => {
             return (
-              <div className="board-row">
+              <div className={Styles.boardRow}>
                 {board.col.map((value, index) => {
                   return (
                     this.renderSquare(count++)
@@ -188,20 +190,20 @@ class Game extends React.Component {
     }
     
     return (
-      <div className="game">
-        <div className="game-board">
+      <div className={Styles.game}>
+        <div className={Styles.gameBoard}>
           <Board
             squares={current.squares}
             onClick={(i) => this.handleClick(i)}
           />
         </div>
-        <div className="game-info">
+        <div className={Styles.gameInfo}>
           <div>{status}</div>
           {/* 
             It’s strongly recommended that you assign proper keys whenever you build dynamic lists.  
             Keys do not need to be globally unique; they only need to be unique between components and their siblings.
           */}
-          <ul className="no-bull" id="prev-moves">{moves}</ul>
+          <ul className={Styles.gameBoard} id="prev-moves">{moves}</ul>
         </div>
       </div>
     );

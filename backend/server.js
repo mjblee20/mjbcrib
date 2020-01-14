@@ -9,7 +9,6 @@ const bodyParser = require('body-parser');
 require('dotenv').config();
 
 const app = express();
-// var nodeEnv = process.env.NODE_ENV || 'development';
 var port = process.env.PORT || 3001;
 var host = process.env.HOST || '0.0.0.0';
 

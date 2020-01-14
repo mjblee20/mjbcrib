@@ -93,6 +93,16 @@ class Portfolio extends React.Component {
                 <br /> 
               </Col>
             </Row>
+            <Row>
+              <Col>
+                <h3 className={AppStyles.customFont1}>TicTacToe</h3>
+                <ListGroup>
+                  <ListGroup.Item href="/tictactoe" action variant='info'>Game</ListGroup.Item>
+                </ListGroup>
+
+                <br /> 
+              </Col>
+            </Row>
           </Col>
         </Row>
 
