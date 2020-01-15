@@ -3,6 +3,8 @@ import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css'
 
+import API from "./utils/API";
+
 
 class CreateExercise extends Component {
   constructor(props) {
@@ -25,7 +27,7 @@ class CreateExercise extends Component {
   }
 
   componentDidMount() {
-    axios.get('users/')
+    API.get('users/')
     .then(res => {
       if (res.data.length > 0) {
         this.setState({

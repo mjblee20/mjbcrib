@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+import API from './../../utils/API';
+
 class CreateUser extends Component {
   constructor(props) {
     super(props);

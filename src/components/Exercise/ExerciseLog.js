@@ -4,6 +4,8 @@ import axios from 'axios';
 import Button from 'react-bootstrap/Button';
 import CreateExercise from './CreateExercise';
 
+import API from './../../utils/API';
+
 const Exercise = props => (
   <tr>
     <td>{props.exercise.username}</td>
@@ -29,7 +31,7 @@ export class ExerciseLog extends Component {
   }
 
   componentDidMount() {
-    axios.get('/exercises/')
+    API.get('/exercises/')
     .then(res => {
       console.log('load exercises');
       this.setState({
@@ -40,7 +42,7 @@ export class ExerciseLog extends Component {
   }
 
   delete(id) {
-    axios.delete('/exercises/'+id)
+    API.delete('/exercises/'+id)
     .then(res => {
       console.log(res.data);
       this.setState({
