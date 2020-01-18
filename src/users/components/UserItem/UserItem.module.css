@@ -1,0 +1,29 @@
+.user_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  padding: 1rem;
+  color: white;
+  background: #292929;
+  margin: 5px;
+}
+.user_card:hover,
+.user_card:active {
+  background: #ffd900;
+}
+
+.avatar {
+}
+
+.image {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+
+.user_info {
+
+}

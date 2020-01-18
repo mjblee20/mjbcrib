@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ProfileImage from './../../../shared/images/avatar.png';
+
 import Styles from './UserItem.module.css';
 
 /**
@@ -10,12 +12,16 @@ import Styles from './UserItem.module.css';
 
 function UsersList(props) {
   return (
-    <div className={Styles.userCard}>
-      <div className={Styles.Avatar}>
-        <img src="#" alt={props.user.name}/>
+    <div className={Styles.user_card}>
+      <div className={Styles.avatar}>
+        <img className={Styles.image} src={ProfileImage} alt={props.user.name}/>
       </div>
-      <h3>{props.user.name} {props.user.age}</h3>
-      <h4>{props.placesCount} {props.user.placesCount > 0 ? "Places" : "Place"}</h4>
+      <div>
+        <h3>{props.user.name} {props.user.age}</h3>
+      </div>
+      <div className={Styles.user_info}>
+        <h4>{props.user.placesCount} {props.user.placesCount > 0 ? "Places" : "Place"}</h4> 
+      </div>
     </div>
   )
 }

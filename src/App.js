@@ -57,8 +57,8 @@ function App() {
           <Route path='/exercises/edit/:id' component={EditExercise} />
           <Route path='/exercises/create' component={CreateExercise} />
           
-          <Route exact path='/users' component={User} />
-          <Route path='/users/add' component={CreateUser} />
+          {/* <Route exact path='/users' component={User} /> */}
+          {/* <Route path='/users/add' component={CreateUser} /> */}
 
           <Route path='/todo' component={Todo} />
           <Route path='/calendar' component={CalendarTab} />
