@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import KnowledgeCluster from '../../components/KnowledgeCluster/KnowledgeCluster';
+import KnowledgeCluster from '../../places/components/KnowledgeCluster/KnowledgeCluster';
 
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Button from 'react-bootstrap/Button'
