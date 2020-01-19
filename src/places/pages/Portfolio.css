@@ -1,0 +1,24 @@
+.description {
+  height: 150px;
+}
+
+.projectCardSpace {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectCard {
+  margin: 5rem;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolioContent {
+  margin-top: 180px;
+  margin-bottom: 20px;
+}
