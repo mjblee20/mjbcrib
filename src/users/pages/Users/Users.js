@@ -28,6 +28,7 @@ function Users() {
       age: 32
     },
   ]
+  
   return (
     <div>
       {/* Returns the list of available users */}
