@@ -9,7 +9,7 @@ import Styles from './AppNavBar.module.css';
 class AppNavBar extends React.Component {
   render() {
     return(
-        <Navbar fixed='top' bg='dark' variant='dark' expand='sm' className='d-flex justify-content-between'>
+        <Navbar fixed='top' bg='dark' variant='dark' expand='sm' className={`${Styles.background} d-flex justify-content-between`}>
           <div>
             <Navbar.Brand className={Styles.customBrand} href='/'>MJB.</Navbar.Brand>
           </div>

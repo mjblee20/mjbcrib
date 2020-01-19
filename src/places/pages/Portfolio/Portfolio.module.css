@@ -1,3 +1,9 @@
+body {
+  background: url('./../../../shared/images/tablenpencil.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .description {
   height: 150px;
 }
