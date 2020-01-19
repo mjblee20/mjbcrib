@@ -22,7 +22,7 @@ class AppNavBar extends React.Component {
                 <Nav.Link href='/about' className='nav-link-custom'>About</Nav.Link>
                 {/* <Nav.Link href='/blog'  className='customLinks'>Blog</Nav.Link> */}
                 <Nav.Link href='/portfolio' className='nav-link-custom' variant='custom'>Portfolio</Nav.Link>
-                <Nav.Link href='/users' className='nav-link-custom' variant='custom'>Users</Nav.Link>
+                <Nav.Link href='/members' className='nav-link-custom' variant='custom'>Members</Nav.Link>
                 {/* <Nav.Link href='/resume'  className='customLinks'>Resume</Nav.Link> */}
               </Nav>
             </Navbar.Collapse>

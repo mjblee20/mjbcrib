@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import KnowledgeCluster from '../../places/components/KnowledgeCluster';
+import BubbleClump from '../../places/components/BubbleClump';
 
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Button from 'react-bootstrap/Button'
@@ -16,11 +16,11 @@ class Home extends Component {
           <p className='description'>This website will be a place where I put all my work and projects in.</p>
           <hr className="my-2" />
           <p>Below is the list of my skillsets:</p>
-          <KnowledgeCluster />
+          <BubbleClump />
         </Jumbotron>
 
         <div className='btnRightAlign'> 
-          <Button className='portfolioBtn' href='/portfolio' variant='primary'>View Portfolio</Button>
+          <Button className='portfolioBtn' href='/portfolio' variant='info'>View Portfolio</Button>
         </div>
         
       </div>

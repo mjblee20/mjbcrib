@@ -1,6 +1,8 @@
 import React from 'react';
 
-import UsersList from './../components/UsersList';
+import MembersList from '../components/MembersList';
+
+import Row from 'react-bootstrap/Row';
 
 function Users() {
   // List of users, eventually get from database
@@ -8,31 +10,33 @@ function Users() {
     {
       id: 1,
       name: 'Bill',
-      location: 'Taiwan',
-      placesCount: 5,
       image: 'RandomURL',
-      age: 25
+      placeCount: 4
     }, {
       id: 2,
       name: 'Ruby',
-      location: 'Hong Kong',
-      placesCount: 4,
       image: 'RandomURL',
-      age: 24
+      placeCount: 4
     }, {
       id: 3,
-      name: 'Henry',
-      location: 'Taiwan',
-      placesCount: 5,
+      name: 'Rango',
       image: 'RandomURL',
-      age: 32
+      placeCount: 4
+    }, {
+      id: 3,
+      name: 'Dewey',
+      image: 'RandomURL',
+      placeCount: 4
     },
   ]
   
   return (
     <div>
+      <Row id='about-header'>
+          <h1>Members of MJB Crib</h1>
+      </Row>
       {/* Returns the list of available users */}
-      <UsersList users={USERS}/>
+      <MembersList members={USERS}/>
     </div>
   )
 }

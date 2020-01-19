@@ -24,7 +24,7 @@ import User from './users/components/User';
 import Habit from './users/pages/Habit';
 import CreateStack from './users/components/CreateStack';
 
-import Users from './users/pages/Users';
+import Members from './users/pages/Members';
 
 import Todo from './users/components/ToDo';
 import CalendarTab from './users/components/CalendarTab';
@@ -66,7 +66,7 @@ function App() {
           <Route exact path='/habits' component={Habit} />
           <Route path='/habits/createstack' component={CreateStack} />
 
-          <Route exact path='/users' component={Users} />
+          <Route exact path='/members' component={Members} />
         </Switch>
 
       </Router>

@@ -8,7 +8,7 @@
 
 .bubbles:hover {
   font-size: 30;
-  background-color: #3fbac2;
+  background-color: goldenrod;
   transform: scale(1.5);
 }
 

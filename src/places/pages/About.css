@@ -1,3 +1,8 @@
+#bio-content {
+  display:flex;
+  align-items: center;
+}
+
 #bio {
   font-family: 'Kalam', cursive;
   position: relative;
