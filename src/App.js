@@ -36,9 +36,8 @@ import './App.css';
 
 function App() {
   return (
-    <div className='container'>
+    <div>
       <Navbar />
-      <br />
       <Router>
         <Switch>
           <Route path='/' exact component={Home} />

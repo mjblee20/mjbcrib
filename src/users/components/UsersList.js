@@ -17,8 +17,8 @@ function UsersList(props) {
   }
   
   return (
-    <Container>
-      <Row className='usersList'>
+    <Container className='users-container'>
+      <Row className='users-list'>
         {props.users.map(user => (
           <Col xs={12} md={6} xl={4}>
             <UserItem user={user}/>

@@ -9,7 +9,7 @@ import './AppNavBar.css';
 class AppNavBar extends React.Component {
   render() {
     return(
-        <Navbar fixed='top' bg='dark' variant='dark' expand='sm' className='d-flex justify-content-between' style={{ 'background-color':'#393e46' }}>
+        <Navbar fixed='top' expand='sm' className='d-flex justify-content-between' style={{ 'background-color':'#393e46', 'height':'70px' }}>
           <div>
             <Navbar.Brand className='customBrand' href='/'>MJB.</Navbar.Brand>
           </div>

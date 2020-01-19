@@ -23,10 +23,9 @@ function UsersList(props) {
               </Col>
               <Col className='user_card_info'>
               {/* Here goes the name of user and # of places */}
-                <h5>{props.user.name}</h5>
+                <h5 className='user_name'>{props.user.name}</h5>
                 <h6>{props.user.placesCount} {props.user.placesCount > 0 ? "Places" : "Place"}</h6> 
               </Col>
-              
             </Row> 
           </Container>
         </Link>

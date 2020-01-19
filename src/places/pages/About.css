@@ -1,10 +1,17 @@
-.bio {
+#bio {
+  font-family: 'Kalam', cursive;
   position: relative;
   width: 80%;
   margin: auto;
 }
 
-.body {
+#about-header {
+  height: 10rem;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Baloo Bhai', cursive;
+  background-color: #3fbac2;
+  margin-bottom: 2rem;
 }
 
 .image {

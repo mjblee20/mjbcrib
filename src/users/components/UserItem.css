@@ -11,7 +11,7 @@
   text-decoration: none;
   padding: 0.5rem;
   color: white;
-  background: #292929;
+  background: #393e46;
 }
 
 .user_card_content {
@@ -23,7 +23,7 @@
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  background:#292929;
+  background:#393e46;
   margin: 0.5rem;
   padding: 0.5rem;
 }
@@ -45,10 +45,10 @@
 .user_card:active {
   background: #3fbac2;
 }
-
+/* 
 .user_card:hover h5,
 .user_card:active h5,
 .user_card:hover h6,
 .user_card:active h6 {
   color: #3fbac2;
-}
+} */

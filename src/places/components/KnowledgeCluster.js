@@ -1,8 +1,5 @@
 import React, { Component } from 'react'
 
-// import Row from 'react-bootstrap/Row';
-// import AppStyles from './../../App.module.css';
-
 import BubbleClump from './../components/BubbleClump';
 
 

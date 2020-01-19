@@ -1,8 +1,12 @@
 .titleHead {
+  font-family: 'Long Cang', serif;
+  font-size: 7rem;
+  font-weight: bolder;
   text-align: center;
 }
 
 .description {
+  font-family: 'Playfair Display', serif;
   text-align: center;
 }
 
@@ -14,4 +18,8 @@
 .portfolioBtn {
   text-align: center;
   width: 200px;
+}
+
+.container-custom {
+  margin: 3rem;
 }
