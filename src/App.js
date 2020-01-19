@@ -7,7 +7,7 @@ import {
 
 
 
-import Navbar from './shared/AppNavBar/AppNavBar';
+import Navbar from './shared/components/AppNavBar/AppNavBar';
 
 import Home from './places/pages/Home/Home';
 import Portfolio from './places/pages/Portfolio/Portfolio';
