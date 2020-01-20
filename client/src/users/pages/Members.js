@@ -1,12 +1,12 @@
 import React from 'react';
 
-import MembersList from './../components/Members/MembersList';
+import MembersList from '../components/Members/MembersList';
 
 import Row from 'react-bootstrap/Row';
 
-function Users() {
-  // List of users, eventually get from database
-  const USERS = [
+function Members() {
+  // List of Members, eventually get from database
+  const MEMBERS = [
     {
       id: 1,
       name: 'Bill',
@@ -35,10 +35,10 @@ function Users() {
       <Row id='about-header'>
           <h1>Members of MJB Crib</h1>
       </Row>
-      {/* Returns the list of available users */}
-      <MembersList members={USERS}/>
+      {/* Returns the list of available Members */}
+      <MembersList members={MEMBERS}/>
     </div>
   )
 }
 
-export default Users;
+export default Members;

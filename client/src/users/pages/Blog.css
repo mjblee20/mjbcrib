@@ -1,0 +1,8 @@
+#blog-header {
+  height: 10rem;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Baloo Bhai', cursive;
+  background-color: #3fbac2;
+  margin-bottom: 2rem;
+}

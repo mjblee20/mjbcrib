@@ -17,9 +17,9 @@ import Blog from './users/pages/Blog';
 
 import EditExercise from './users/components/Exercise/EditExercise'
 import CreateExercise from './users/components/Exercise/CreateExercise';
-import CreateUser from './users/components/Exercise/CreateUser';
+// import CreateUser from './users/components/Exercise/CreateUser';
 import ExerciseLog from './users/components/Exercise/ExerciseLog';
-import User from './users/components/Exercise/User';
+// import User from './users/components/Exercise/User';
 
 import Habit from './users/pages/Habit';
 import CreateStack from './users/components/Habits/CreateStack';

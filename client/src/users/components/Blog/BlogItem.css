@@ -1,0 +1,24 @@
+.poster-info__image {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+}
+
+.blog-post {
+  text-decoration: none;
+  padding: 3rem 3rem 1rem 3rem;
+  margin: 1rem;
+  border: 1px solid #4CAF50;
+  background: #c9d6df;
+  width: 100%;
+}
+
+.poster-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.post-footer {
+  text-align: right;
+}

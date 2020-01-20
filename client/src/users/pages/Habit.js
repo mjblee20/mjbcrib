@@ -1,25 +1,31 @@
 import React from 'react';
 
-import HabitStacker from './../components/Habits/HabitStacker';
-import HabitTracker from './../components/Habits/HabitTracker';
+import HabitStacker from '../components/Habits/HabitStacker';
+import HabitTracker from '../components/Habits/HabitTracker';
 
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 
 function Habit() {
-  var HABITS = [{
+  var DUMMYHABITSTACKS = [{
     id: 1,
-    name: 'Study',
+    habit: 'Study',
     desire: 'study for an hour',
     wanted: 'play one game of league of legends',
     streak: 30
   }, {
     id: 2,
-    name: 'Exercise',
+    habit: 'Exercise',
     desire: 'exercise for an hour',
     wanted: 'play one game of league of legends',
     streak: 10
+  }, {
+    id: 3,
+    habit: 'Meditate',
+    desire: 'meditate for 10 minutes',
+    wanted: 'drink a cup of coffee',
+    streak: 14
   }]
 
   return (
@@ -31,7 +37,7 @@ function Habit() {
           @ Streak Number
           
           */}
-          <HabitTracker habits={HABITS}/>
+          <HabitTracker habits={DUMMYHABITSTACKS}/>
         </Col>
 
         <Col>
@@ -41,7 +47,7 @@ function Habit() {
             @ Desired Habit
             @ Wanted Habit
             */}
-          <HabitStacker habitstack={HABITS}/>
+          <HabitStacker habits={DUMMYHABITSTACKS}/>
         </Col>
       </Row>
     </div>
