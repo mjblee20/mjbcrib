@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import API from '../../shared/utils/API';
+import API from '../../../shared/utils/API';
 
 class CreateUser extends Component {
   constructor(props) {

@@ -28,10 +28,8 @@ class ToDoList extends React.Component {
 
   onChange = (event) => {
     this.setState({item: event.target.value});
-
   }
 
-  
   addTask = (event) => {
     event.preventDefault();
     this.setState({
@@ -58,8 +56,7 @@ class ToDoList extends React.Component {
               <th>
                 <h4>TODO:</h4>
                 <Form id="new-item-form" inline>
-       
-                 <InputGroup>
+                <InputGroup>
                     <InputGroup.Prepend >
                       <InputGroup.Text id="addon" onClick={this.addTask} value={this.state.item} >+</InputGroup.Text>
                     </InputGroup.Prepend>
@@ -69,7 +66,6 @@ class ToDoList extends React.Component {
                       aria-label="item"
                       aria-describedby="addon"
                     />
-                    
                   </InputGroup>
                 </Form>
               </th>

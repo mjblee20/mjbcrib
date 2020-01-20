@@ -1,7 +1,7 @@
 import React from 'react';
 
 import MemberItem from './MemberItem';
-import Card from '../../shared/components/Card';
+import Card from '../../../shared/components/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';

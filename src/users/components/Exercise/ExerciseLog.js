@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Button from 'react-bootstrap/Button';
 import CreateExercise from './CreateExercise';
 
-import API from '../../shared/utils/API';
+import API from '../../../shared/utils/API';
 
 const Exercise = props => (
   <tr>

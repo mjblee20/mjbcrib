@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 
-import API from '../../shared/utils/API';
+import API from '../../../shared/utils/API';
 
 export default class EditExercise extends Component {
   constructor(props) {

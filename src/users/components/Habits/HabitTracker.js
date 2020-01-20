@@ -1,7 +1,7 @@
-import React from 'react'
+import React from './node_modules/react'
 
-import Tabs from 'react-bootstrap/Tabs';
-import Tab from 'react-bootstrap/Tab';
+import Tabs from './node_modules/react-bootstrap/Tabs';
+import Tab from './node_modules/react-bootstrap/Tab';
 
 import ScoreBoard from './ScoreBoard';
 

@@ -3,7 +3,7 @@ import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css'
 
-import API from "../../shared/utils/API";
+import API from "../../../shared/utils/API";
 
 
 class CreateExercise extends Component {
