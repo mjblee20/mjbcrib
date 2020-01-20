@@ -5,8 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Card from 'react-bootstrap/Card';
-
-import ToDo from '../../users/components/ToDo';
+import Badge from 'react-bootstrap/Badge';
 
 import './Portfolio.css';
 class Portfolio extends React.Component {
@@ -24,16 +23,16 @@ class Portfolio extends React.Component {
   render() {
     return (
       <div>
-        <Row id='about-header'>
+        <Row id='header'>
             <h1>Projects</h1>
         </Row>
       
         <div className='container'>
           
           <div className='projectCardSpace'>
-            <Card className='projectCard card-custom' style={{ width: '18rem', margin:'2rem' }}>
+            <Card className='projectCard card-custom' style={{ width: '18.5rem', margin:'2rem' }}>
               <Card.Body>
-                <Card.Title>AllThingsJavascript</Card.Title>
+                <Card.Title>AllThingsJavascript <Badge variant="secondary">New</Badge></Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Solo Project</Card.Subtitle>
                 <Card.Text className='description'>
                   A Node.js project of my own where I practice the coding challenges and problems. A little bit of Javascript learning will go here as well. 
@@ -45,7 +44,7 @@ class Portfolio extends React.Component {
               </Card.Body>
             </Card>
 
-            <Card className='projectCard card-custom' style={{ width: '18rem', margin:'2rem'}}>
+            <Card className='projectCard card-custom' style={{ width: '18.5rem', margin:'2rem'}}>
               <Card.Body>
                 <Card.Title>In or Out</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Bootcamp Project</Card.Subtitle>
@@ -59,7 +58,7 @@ class Portfolio extends React.Component {
               </Card.Body>
             </Card>
             
-            <Card className='projectCard card-custom' style={{ width: '18rem', margin:'2rem' }}>
+            <Card className='projectCard card-custom' style={{ width: '18.5rem', margin:'2rem' }}>
               <Card.Body>
                 <Card.Title>Instapotty</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">Bootcamp Project</Card.Subtitle>

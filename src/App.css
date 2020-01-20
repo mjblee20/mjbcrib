@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Bhai|Dancing+Script|Kalam|Long+Cang|Righteous|Zhi+Mang+Xing|BioRhyme|Cairo|Frank+Ruhl+Libre|Playfair+Display&display=swap');
 
-.customFont3 {
-  font-family: 'Long Cang', serif;
-}
-
-.customFont4 {
-  font-family: 'Dancing Script', serif;
-}
-
 .section {
   display: flex;
   justify-content: space-around;

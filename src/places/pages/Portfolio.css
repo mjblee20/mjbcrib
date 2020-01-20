@@ -1,8 +1,12 @@
-#about-header {
+.customFont1 {
+  font-family: 'Baloo Bhai', serif;
+}
+
+#header {
   height: 10rem;
   justify-content: center;
   align-items: center;
-  font-family: 'Baloo Bhai', cursive;
+  font-family: 'Baloo Bhai', serif;
   background-color: #3fbac2;
   margin-bottom: 2rem;
 }
