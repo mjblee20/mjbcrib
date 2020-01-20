@@ -14,7 +14,7 @@ function MemberItem(props) {
     <li className='member_item'>
       <Card className=
       'member_card'>
-        <Link to={`/${props.member.id}/places`}>
+        <Link to={`/members/${props.member.id}/places`}>
           <Container className='member_card_container'>
             <Row className='member_card_content'>
               <Col className='avatar'>

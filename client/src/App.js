@@ -2,7 +2,8 @@ import React from 'react';
 import { 
   BrowserRouter as Router, 
   Route, 
-  Switch 
+  Switch, 
+  Redirect
 } from 'react-router-dom';
 
 
@@ -25,6 +26,9 @@ import Habit from './users/pages/Habit';
 import CreateStack from './users/components/Habits/CreateStack';
 
 import Members from './users/pages/Members';
+import MemberPlaceList from './users/components/Members/MemberPlaceList';
+import MemberPlaceItem from './users/components/Members/MemberPlaceItem';
+
 
 import Todo from './users/components/ToDo';
 import CalendarTab from './users/components/CalendarTab';
@@ -51,6 +55,12 @@ function App() {
           <Route path='/resume' component={Resume} />
 
 
+          <Route exact path='/habits' component={Habit} />
+          <Route path='/habits/createstack' component={CreateStack} />
+
+          <Route exact path='/members' component={Members} />
+          <Route path='/members/:memberId/places' component={MemberPlaces} />
+
           {/* This Section is moved to Portfolio */}
           <Route exact path='/exercises' component={ExerciseLog} />
           <Route path='/exercises/edit/:id' component={EditExercise} />
@@ -63,10 +73,7 @@ function App() {
           <Route path='/calendar' component={CalendarTab} />
           <Route path='/tictactoe' component={TicTacToe} />
 
-          <Route exact path='/habits' component={Habit} />
-          <Route path='/habits/createstack' component={CreateStack} />
-
-          <Route exact path='/members' component={Members} />
+          <Redirect to='/' />
         </Switch>
       </main>
     </Router>
