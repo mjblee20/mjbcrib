@@ -1,0 +1,7 @@
+#particles-animation {
+  z-index: -1;
+  background: #b61924;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}

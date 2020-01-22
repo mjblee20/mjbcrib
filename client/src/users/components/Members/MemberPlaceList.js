@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './MemberPlaces.css';
+import './MemberPlaceList.css';
 
 
 const MemberPlaces = (props) => {

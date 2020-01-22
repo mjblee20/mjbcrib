@@ -20,10 +20,6 @@
   width: 200px;
 }
 
-.container-custom {
-  margin: 3rem;
-}
-
 @media (min-width: 768px) {
   .main-header {
     justify-content: space-between;

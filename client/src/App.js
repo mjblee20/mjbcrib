@@ -11,7 +11,11 @@ import {
 import Navbar from './shared/components/Navigation/MainNavigation';
 
 import Home from './shared/pages/Home';
+
 import Portfolio from './places/pages/Portfolio';
+import SideProjects from './places/components/Portfolio/SideProjects';
+import PlayGround from './places/components/Portfolio/PlayGround';
+
 import Resume from './places/pages/Resume';
 import About from './places/pages/About';
 import Blog from './users/pages/Blog';
@@ -26,8 +30,7 @@ import Habit from './users/pages/Habit';
 import CreateStack from './users/components/Habits/CreateStack';
 
 import Members from './users/pages/Members';
-import MemberPlaceList from './users/components/Members/MemberPlaceList';
-import MemberPlaceItem from './users/components/Members/MemberPlaceItem';
+import MemberPlaces from './users/pages/MemberPlaces';
 
 
 import Todo from './users/components/ToDo';
@@ -39,9 +42,12 @@ import TicTacToe from './places/components/TicTacToe';
 import './App.css';
 
 function App() {
+
   return (
     <Router>
+      
       <Navbar />
+      
       <main>
         <Switch>
           <Route path='/' exact component={Home} />
@@ -50,7 +56,9 @@ function App() {
 
           <Route path='/about' component={About} />
 
-          <Route path='/portfolio' component={Portfolio} />
+          <Route exact path='/portfolio' component={Portfolio} />
+          <Route path='/portfolio/playground' component={PlayGround} />
+          <Route path='/portfolio/sideprojects' component={SideProjects} />
 
           <Route path='/resume' component={Resume} />
 
@@ -76,6 +84,7 @@ function App() {
           <Redirect to='/' />
         </Switch>
       </main>
+      
     </Router>
   );
 }

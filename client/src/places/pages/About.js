@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 
+import BubbleClump from './../components/BubbleClump'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import Button from 'react-bootstrap/Button';
 import Waterfall from '../../shared/images/waterfall.jpg'
 import './About.css';
 
@@ -11,7 +13,19 @@ export class About extends Component {
   render() {
     return (
       <div id='about-content'>
-        
+        <Jumbotron id='welcome'>
+          <h1 className='titleHead'>Welcome to MJB_Crib</h1>
+          <br />
+          <p className='description'>This website will be a place where I put all my work and projects in.</p>
+          <hr className="my-2" />
+          <p>Below is the list of my skillsets:</p>
+          <BubbleClump />
+
+          <div className='btnRightAlign'> 
+            <Button className='portfolioBtn' href='/portfolio' variant='info'>View Portfolio</Button>
+          </div>
+        </Jumbotron>
+
         <Row id='about-header'>
           <h1>About Me</h1>
         </Row>
