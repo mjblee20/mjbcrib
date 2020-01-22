@@ -1,7 +1,32 @@
 #particles-animation {
-  z-index: -1;
-  background: #b61924;
+  background: url('./../../images/darksnow.jpg');
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+}
+
+#particles-screen {
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  overflow:hidden;
+  z-index:-1;
+}
+
+#within-particles {
+  z-index: 100;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #particles-animation {
+    /* background: url('./../../images/wintertrees.jpg') no-repeat center center fixed;  */
+    display:block;
+    background: url('./../../images/wintertrees.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+  
 }

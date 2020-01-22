@@ -14,9 +14,9 @@ const NavLinks = props => {
     <li className='dropdown' >
       <NavLink to="/portfolio">Portfolio</NavLink>
       <div className='dropdown-content'>
-        <Link className='dropdown-links' to='/portfolio'>Projects</Link>
-        <Link className='dropdown-links' to='/portfolio/playground'>Playground</Link>
+        <Link className='dropdown-links' to='/portfolio/projects'>Projects</Link>
         <Link className='dropdown-links' to='/portfolio/sideprojects'>Side Projects</Link>
+        <Link className='dropdown-links' to='/portfolio/playground'>Playground</Link>
       </div>
     </li>
     <li>

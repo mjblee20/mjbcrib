@@ -12,9 +12,10 @@ import Navbar from './shared/components/Navigation/MainNavigation';
 
 import Home from './shared/pages/Home';
 
-import Portfolio from './places/pages/Portfolio';
-import SideProjects from './places/components/Portfolio/SideProjects';
-import PlayGround from './places/components/Portfolio/PlayGround';
+import Portfolio from './places/pages/Portfolio/Portfolio';
+import ProjectCards from './places/pages/Portfolio/ProjectCards'
+import SideProjects from './places/pages/Portfolio/SideProjects';
+import PlayGround from './places/pages/Portfolio/PlayGround';
 
 import Resume from './places/pages/Resume';
 import About from './places/pages/About';
@@ -57,6 +58,7 @@ function App() {
           <Route path='/about' component={About} />
 
           <Route exact path='/portfolio' component={Portfolio} />
+          <Route path='/portfolio/projects' component={ProjectCards} />
           <Route path='/portfolio/playground' component={PlayGround} />
           <Route path='/portfolio/sideprojects' component={SideProjects} />
 

@@ -1,27 +1,11 @@
-.titleHead {
-  font-family: 'Long Cang', serif;
-  font-size: 7rem;
-  font-weight: bolder;
-  text-align: center;
-}
 
-.description {
-  font-family: 'Playfair Display', serif;
-  text-align: center;
-}
-
-.btnRightAlign {
-  display:flex;
-  justify-content: flex-end;
-}
-
-.portfolioBtn {
-  text-align: center;
-  width: 200px;
-}
 
 @media (min-width: 768px) {
   .main-header {
     justify-content: space-between;
+  }
+
+  #homepage-container {
+    height: 100%;
   }
 }

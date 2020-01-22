@@ -1,0 +1,12 @@
+#hub-container {
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem;
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  z-index: 1;
+}
+
+  
