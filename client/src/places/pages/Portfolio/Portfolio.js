@@ -1,41 +1,23 @@
 import React from 'react';
 
-import PlayGround from './PlayGround';
-import SideProjects from './SideProjects';
-import ProjectCards from './ProjectCards';
+import GridContainer from '../../components/Portfolio/GridContainer';
 import Row from 'react-bootstrap/Row';
 
 import './Portfolio.css';
-class Portfolio extends React.Component {
-  constructor(props) {
-    super(props);
-    // {/* Setting the 'state' of the Component */}
-    // {/* (DEFINITION) state == the memory of information currently rendered on screen */}
-    this.state = {
-      duration:'',
-    };
-  }
+const Portfolio = (props) => {
+  return (
+    <div>
+      <Row id='header'>
+          <h1>Projects</h1>
+      </Row>
+    
+      {/* Maybe make the grid more reusable by creating a container only */}
+      <GridContainer>
 
-  // Pings API for project information
+      </GridContainer>
 
-  render() {
-    return (
-      <div>
-        <Row id='header'>
-            <h1>Projects</h1>
-        </Row>
-      
-        <div className='container'>
-          <ProjectCards />
-          <br /> 
-          <SideProjects />
-          <br />
-          <PlayGround />
-        </div>
-
-      </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default Portfolio;

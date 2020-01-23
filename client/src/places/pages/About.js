@@ -13,18 +13,6 @@ export class About extends Component {
   render() {
     return (
       <div id='about-content'>
-        <Jumbotron id='welcome'>
-          <h1 className='titleHead'>Welcome to MJB_Crib</h1>
-          <br />
-          <p className='description'>This website will be a place where I put all my work and projects in.</p>
-          <hr className="my-2" />
-          <p>Below is the list of my skillsets:</p>
-          <BubbleClump />
-
-          <div className='btnRightAlign'> 
-            <Button className='portfolioBtn' href='/portfolio' variant='info'>View Portfolio</Button>
-          </div>
-        </Jumbotron>
 
         <Row id='about-header'>
           <h1>About Me</h1>
@@ -33,26 +21,17 @@ export class About extends Component {
         <div className='container'>
           <Row>
             
-            <Col>
+            <Col xs={12} md={6}>
               <img className='image'src={Waterfall} alt='waterfall' />
             </Col>
 
-            <Col id='bio-content'>
+            <Col xs={12} md={6} id='bio-content'>
               <p id='bio'>
                 Hi there! I'm Ming Jung Lee, you can call me Bill. I'm a passionate full stack web developer with a background in Biophysics looking to create intuitive, efficient, and user-friendly interfaces. I have recently completed a full-stack development bootcamp course and currently is looking for a position in which I can quickly absorb new information and learn new skills and apply the knowledge in real world web applications.
+
+                Below is the list of my skillsets:
               </p>
-            </Col>
-
-          </Row>
-
-          <Row>
-            
-            <Col>
-              <h2>Mission</h2>
-            </Col>
-
-            <Col>
-              <p>More Image</p>
+              {/* <BubbleClump /> */}
             </Col>
 
           </Row>

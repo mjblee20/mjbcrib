@@ -1,6 +1,0 @@
-.playground-container {
-  display: grid;
-  grid-auto-rows: repeat(4, 1fr);
-  grid-gap: 0.5rem;
-  grid-auto-rows: minmax(4, auto);
-}

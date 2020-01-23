@@ -10,8 +10,8 @@ class Home extends Component {
     return (
       <div id='homepage-container'>
 
-        <ParticlesBG />
-        
+        {/* <ParticlesBG /> */}
+
         <Hub />
         
         {/* 

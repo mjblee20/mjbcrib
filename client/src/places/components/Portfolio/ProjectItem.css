@@ -1,15 +1,19 @@
-.description {
-  height: 150px;
-}
-
 .project-card-space {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-wrap: nowrap;
+  justify-content: center;
   align-items: center;
+}
+
+.description {
+  height: 150px;
 }
 
 .button-group {
   display: flex;
   justify-content: space-between;
+}
+
+.button-group > button {
+  margin: 1rem;
 }

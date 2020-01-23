@@ -7,16 +7,18 @@
 .section-title {
   display:block;
   width: 100%;
-  color: #d72323;
+  color: #222831;
   font-family: 'Playfair Display', cursive;
   font-size: 4rem;
   font-weight: bold;
+  text-decoration: none;
+  text-align: center;
 }
 
 .overlay {
   position: absolute;
   left: 100%;
-  background-color: #008CBA;
+  /* background-color: #008CBA; */
   overflow: hidden;
   width: 0;
   height: 100%;
@@ -30,9 +32,8 @@
 
 .container:hover .section-title {
   width: 100%;
-  background-color: white;
-  opacity: 0.5;
   overflow:hidden;
+  text-decoration: none
 }
 
 .text {

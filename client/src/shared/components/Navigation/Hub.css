@@ -1,12 +1,10 @@
 #hub-container {
-  display: flex;
-  flex-direction: column;
-
   padding: 2rem;
-  position: fixed;
-  top: 4rem;
-  left: 0;
-  z-index: 1;
 }
 
-  
+#parallax {
+  background-color: #c9d6df;
+  width: 100%;
+  left: 0;
+  top: 0;
+}

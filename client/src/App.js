@@ -13,9 +13,9 @@ import Navbar from './shared/components/Navigation/MainNavigation';
 import Home from './shared/pages/Home';
 
 import Portfolio from './places/pages/Portfolio/Portfolio';
-import ProjectCards from './places/pages/Portfolio/ProjectCards'
-import SideProjects from './places/pages/Portfolio/SideProjects';
-import PlayGround from './places/pages/Portfolio/PlayGround';
+import ProjectCards from './places/components/Portfolio/ProjectCards'
+import SideProjects from './places/components/Portfolio/SideProjects';
+import PlayGround from './places/components/Portfolio/PlayGround';
 
 import Resume from './places/pages/Resume';
 import About from './places/pages/About';
