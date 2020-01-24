@@ -14,7 +14,7 @@ const PlayGround = (props) => {
       {/* Make Glitchy a reusable component that wraps a button or link */}
       <Glitchy />
 
-      <LinkToButton route='#'>
+      <LinkToButton>
         Click Me!
       </LinkToButton>
     </div>

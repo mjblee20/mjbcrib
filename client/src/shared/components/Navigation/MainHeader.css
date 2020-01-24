@@ -15,8 +15,6 @@
 main {
   margin-top: 4rem;
   background: rgba(201, 214, 223, 1);
-  /* min-height: 100vh; */
-  /* overflow:hidden; */
 }
 
 @media (min-width: 768px) {
