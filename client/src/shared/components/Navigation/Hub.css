@@ -1,10 +1,12 @@
 #hub-container {
   padding: 2rem;
+  overflow:hidden;
 }
 
 #parallax {
-  background-color: #c9d6df;
+  background-color: rgba(201, 214, 223, 1);
   width: 100%;
+  /* margin-top:4rem; */
   left: 0;
   top: 0;
 }

@@ -12,14 +12,18 @@ import Navbar from './shared/components/Navigation/MainNavigation';
 
 import Home from './shared/pages/Home';
 
-import Portfolio from './places/pages/Portfolio/Portfolio';
+import About from './places/pages/About';
+
+import Portfolio from './places/pages/Portfolio';
 import ProjectCards from './places/components/Portfolio/ProjectCards'
 import SideProjects from './places/components/Portfolio/SideProjects';
 import PlayGround from './places/components/Portfolio/PlayGround';
 
-import Resume from './places/pages/Resume';
-import About from './places/pages/About';
 import Blog from './users/pages/Blog';
+
+import Contact from './places/pages/Contact';
+
+import Resume from './places/pages/Resume';
 
 import EditExercise from './users/components/Exercise/EditExercise'
 import CreateExercise from './users/components/Exercise/CreateExercise';
@@ -34,8 +38,8 @@ import Members from './users/pages/Members';
 import MemberPlaces from './users/pages/MemberPlaces';
 
 
-import Todo from './users/components/ToDo';
-import CalendarTab from './users/components/CalendarTab';
+import Todo from './users/components/Productivity/ToDo';
+import CalendarTab from './users/components/Productivity/CalendarTab';
 import TicTacToe from './places/components/TicTacToe';
 
 
@@ -53,9 +57,11 @@ function App() {
         <Switch>
           <Route path='/' exact component={Home} />
 
-          <Route path='/blog' component={Blog} />
+          <Route exact path='/about' component={About} />
+          <Route path='/about/members' component={Members} />
+          <Route path='/about/contact/' component={Contact} />
 
-          <Route path='/about' component={About} />
+          <Route path='/blog' component={Blog} />
 
           <Route exact path='/portfolio' component={Portfolio} />
           <Route path='/portfolio/projects' component={ProjectCards} />
@@ -68,8 +74,6 @@ function App() {
           <Route exact path='/habits' component={Habit} />
           <Route path='/habits/createstack' component={CreateStack} />
 
-          <Route exact path='/members' component={Members} />
-          <Route path='/members/:memberId/places' component={MemberPlaces} />
 
           {/* This Section is moved to Portfolio */}
           <Route exact path='/exercises' component={ExerciseLog} />

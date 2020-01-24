@@ -11,11 +11,13 @@ import './Blog.css';
 
 const DUMMYBLOGS = [
   {
+    id: 1,
     image: ProfileImage,
     poster: 'Bill',
     date: Date(),
     content: "Hi, this is the first blog post ever"
   }, {
+    id: 2,
     image: ProfileImage,
     poster: 'Bill',
     date: Date(),

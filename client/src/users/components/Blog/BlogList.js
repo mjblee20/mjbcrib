@@ -20,6 +20,7 @@ const BlogList = (props) => {
       {props.items.map(blog => {
         return(
           <BlogItem 
+            key={blog.id}
             image={blog.image}
             poster={blog.poster}
             date={blog.date}

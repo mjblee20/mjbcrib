@@ -10,19 +10,19 @@ import Col from 'react-bootstrap/Col';
 function Habit() {
   var DUMMYHABITSTACKS = [{
     id: 1,
-    habit: 'Study',
+    name: 'Study',
     desire: 'study for an hour',
     wanted: 'play one game of league of legends',
     streak: 30
   }, {
     id: 2,
-    habit: 'Exercise',
+    name: 'Exercise',
     desire: 'exercise for an hour',
     wanted: 'play one game of league of legends',
     streak: 10
   }, {
     id: 3,
-    habit: 'Meditate',
+    name: 'Meditate',
     desire: 'meditate for 10 minutes',
     wanted: 'drink a cup of coffee',
     streak: 14

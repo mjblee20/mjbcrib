@@ -28,6 +28,7 @@
   background: #f8df00;
   border-color: #292929;
   color: #292929;
+  transition: right .4s ease-out;
 }
 
 .nav-links button {

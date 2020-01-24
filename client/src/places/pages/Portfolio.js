@@ -1,6 +1,6 @@
 import React from 'react';
 
-import GridContainer from '../../components/Portfolio/GridContainer';
+import GridContainer from '../components/Portfolio/GridContainer';
 import Row from 'react-bootstrap/Row';
 
 import './Portfolio.css';

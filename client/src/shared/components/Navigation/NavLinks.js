@@ -5,8 +5,12 @@ import './NavLinks.css';
 
 const NavLinks = props => {
   return <ul className="nav-links">
-    <li>
+    <li className='dropdown'>
       <NavLink to="/about">About</NavLink>
+      <div className='dropdown-content'>
+        <Link className='dropdown-links' to='/about/members'>Members</Link>
+        <Link className='dropdown-links' to='/about/contact'>Contact</Link>
+      </div>
     </li>
     <li>
       <NavLink to="/blog">Blog</NavLink>
@@ -18,9 +22,6 @@ const NavLinks = props => {
         <Link className='dropdown-links' to='/portfolio/sideprojects'>Side Projects</Link>
         <Link className='dropdown-links' to='/portfolio/playground'>Playground</Link>
       </div>
-    </li>
-    <li>
-      <NavLink to="/members">Members</NavLink>
     </li>
     <li>
       <NavLink to="/auth">AUTHENTICATE</NavLink>

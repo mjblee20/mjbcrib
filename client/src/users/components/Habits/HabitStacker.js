@@ -6,7 +6,7 @@ import './HabitStacker.css';
 
 function HabitStacker(props) {
 
-  if (props.habitstack.length === 0) {
+  if (props.habits.length === 0) {
     return (
       <div>
         <h2>Currently You Have Zero Habit Stacks</h2>
@@ -16,7 +16,7 @@ function HabitStacker(props) {
 
   return (
     <div className='stackList'>
-      {props.habitstack.map(stack => (
+      {props.habits.map(stack => (
         <StackItem 
           key={stack.id} 
           id= {stack.id} 

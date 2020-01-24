@@ -1,15 +1,19 @@
 import React from 'react';
 
-import PlayGround from './PlayGround';
 import SideProjects from './SideProjects';
 import ProjectCards from './ProjectCards';
+import LinkToButton1 from './../../../shared/components/UIElements/LinkToButton1';
+
 import './GridContainer.css';
 
 const GridContainer = (props) => {
   return (
     <div className='grid-container'>
       <div className='habit'>
-        <h1>Habit stuff will go here</h1>
+        <p id='habits-description'>Habits are important believe it or not. Good habits will launch you like a rocket while bad habits will drag your life down like tying a rock on your feet in water</p>
+        <div>
+          <LinkToButton1>Get Started</LinkToButton1>
+        </div>
       </div>
 
       <div className='project-cards'>

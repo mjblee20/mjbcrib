@@ -1,0 +1,187 @@
+/* This Below section makes the background glitch */
+
+.glitchy-body {
+  position: relative;
+  font-family: 'Noticia Text';
+  text-align: center;
+  background: linear-gradient(180deg,#281130 0,#0f0021);
+  height: 100%;
+  margin-top: 5px;
+  min-height: 500px;
+}
+/*
+.glitchy-body:before, .glitchy-body:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.glitchy-body:before {
+  background-color: #00ffff;
+  z-index: -1;
+  animation: glitchy 0.3s ease 0.3s infinite;
+}
+.glitchy-body:after {
+  background-color: #ff00ff;
+  z-index: -2;
+  animation: glitchy 0.3s ease infinite reverse;
+} 
+*/
+
+.table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.table-cell > div {
+  padding: 45px 0;
+}
+.btn-link {
+  position: relative;
+  display: inline-block;
+  color: #281130;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  z-index: 1;
+}
+.btn-link:before, .btn-link:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.btn-link:before {
+  background-color: #00ffff;
+  z-index: -1;
+}
+.btn-link:after {
+  background-color: #ff00ff;
+  z-index: -2;
+}
+.btn-link:hover .link-inner {
+  animation: glitchy 0.3s ease 1;
+}
+.btn-link:hover:before {
+  animation: glitchy 0.3s ease 0.3s infinite;
+}
+.btn-link:hover:after {
+  animation: glitchy 0.3s ease infinite reverse;
+}
+.link-inner {
+  display: block;
+  height: 100%;
+  background-color: #fff;
+  padding: 15px 25px;
+}
+.text-link {
+  position: relative;
+  display: inline-block;
+  font-size: 45px;
+  text-decoration: none;
+  color: #fff;
+  z-index: 1;
+}
+.text-link:before, .text-link:after {
+  content: attr(data-content);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.text-link:before {
+  color: #00ffff;
+  z-index: -1;
+}
+.text-link:after {
+  color: #ff00ff;
+  z-index: -2;
+}
+.text-link:hover:before {
+  animation: glitchy 0.3s ease 0.3s infinite;
+}
+.text-link:hover:after {
+  animation: glitchy 0.3s ease infinite reverse;
+}
+.line-link {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  text-decoration: none;
+  letter-spacing: 0.10em;
+  color: #fff;
+  font-weight: lighter;
+  z-index: 1;
+  border-bottom: 1px solid rgba(255,255,255,0.75);
+  padding-bottom: 10px;
+}
+.line-link:before, .line-link:after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  visibility: hidden;
+}
+.line-link:before {
+  background-color: #00ffff;
+  z-index: -1;
+}
+.line-link:after {
+  background-color: #ff00ff;
+  z-index: -2;
+}
+.line-link:hover:before {
+  visibility: visible;
+  animation: line-glitchy 0.3s ease 0.3s infinite;
+}
+.line-link:hover:after {
+  visibility: visible;
+  animation: line-glitchy 0.3s ease infinite reverse;
+}
+
+@keyframes glitchy {
+  0% {
+    transform: translate(-2px,2px);
+ }
+  25% {
+    transform: translate(-2px,-2px);
+ }
+  50% {
+    transform: translate(2px,2px);
+ }
+  75% {
+    transform: translate(2px,-2px);
+ }
+  100% {
+    transform: translate(-2px,2px);
+ }
+}
+
+@keyframes line-glitchy {
+  0% {
+    transform: translate(-1px,1px);
+ }
+  25% {
+    transform: translate(-1px,-1px);
+ }
+  50% {
+    transform: translate(1px,1px);
+ }
+  75% {
+    transform: translate(1px,-1px);
+ }
+  100% {
+    transform: translate(-1px,1px);
+ }
+}

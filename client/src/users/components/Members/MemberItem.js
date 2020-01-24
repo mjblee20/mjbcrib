@@ -11,7 +11,7 @@ import './MemberItem.css';
 
 function MemberItem(props) {
   return (
-    <li className='member_item'>
+    <li className='member_item' key={props.member.id}>
       <Card className=
       'member_card'>
         <Link to={`/members/${props.member.id}/places`}>

@@ -6,14 +6,17 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: #393e46;
+  background: rgba(34, 40, 49, 1);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.26);
   padding: 0 1rem;
-  z-index: 5;
+  z-index: 100;
 }
 
 main {
   margin-top: 4rem;
+  background: rgba(201, 214, 223, 1);
+  /* min-height: 100vh; */
+  /* overflow:hidden; */
 }
 
 @media (min-width: 768px) {
