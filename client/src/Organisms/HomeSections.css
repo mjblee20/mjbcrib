@@ -1,0 +1,6 @@
+
+.home-content-container {
+  background: var(--white);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}

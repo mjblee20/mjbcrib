@@ -1,0 +1,9 @@
+.nav-icon-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  font-size: 2rem;
+  background: transparent;
+}

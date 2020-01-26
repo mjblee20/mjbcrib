@@ -1,0 +1,26 @@
+/* Layout styles -----------------------------------*/
+@media (min-width: 620px) {
+
+}
+
+@media (min-width: 960px) {
+  
+}
+
+/* Styles */
+
+.contact-grid-container {
+  display: grid;
+  /* 40px: outer margin layer */
+  grid-template-columns: 40px 50px auto 50px 40px;
+  /*
+    120px rows are reserved for page-headers and page-footers 
+    middle repeat(auto, 1fr) is meant to auto create rows for every div
+  */
+  grid-auto-rows: min-content;
+  /* grid-template-rows: 120px repeat(auto, 1fr) 120px; */
+  min-height: 100vh;
+  min-width: 100%;
+  background: var(--white);
+  color: var(--black);
+}

@@ -1,0 +1,87 @@
+/* Layout styles -----------------------------------*/
+@media (min-width: 620px) {
+  
+}
+
+@media (min-width: 960px) {
+  
+}
+
+/* Styles */
+/* TODO: separate them into corresponding css files */
+.blog-page-container {
+  display: grid;
+  /* 40px: outer margin layer */
+  grid-template-columns: 40px 50px auto 50px 40px;
+  /*
+    120px rows are reserved for page-headers and page-footers 
+    middle repeat(auto, 1fr) is meant to auto create rows for every div
+  */
+  grid-auto-rows: min-content;
+  /* grid-template-rows: 120px repeat(auto, 1fr) 120px; */
+  min-height: 100vh;
+  min-width: 100%;
+  background: var(--white);
+  color: var(--black);
+}
+
+/*  */
+.blog-posts-container {
+  display: grid;
+  grid-row: 2;
+  grid-column: 1 / span 5;
+  padding: 15px;
+}
+
+/* Container for all previous posts */
+.posts-container {
+  display: grid;
+}
+
+/* Each post's container */
+.post {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-gap: 10px;
+}
+
+.poster-row {
+  display: flex;
+  /* align-items: center; */
+  background: var(--orangered); /* TODO: eventually fix the coloring */
+}
+
+.poster-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Avatar's styling */
+.avatar {
+  /* TODO: Center the image and add margin */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100px;
+  height: 100%;
+  background: var(--blue);
+
+}
+.headshot {
+  width: 100px;
+  height: 100px;
+}
+
+/* Even number post's styling */
+.post-content {
+  background: var(--lightgray);
+  padding: 10px;
+}
+
+/* Odd number post's styling */
+.post:nth-of-type(odd) > .post-content {
+  background: var(--lightergray);
+  padding: 10px;
+}

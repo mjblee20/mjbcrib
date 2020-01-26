@@ -1,0 +1,12 @@
+.footer-container {
+  grid-row-end: auto;
+  grid-column: 1 /span 5;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 110px;
+  margin-top: 80px;
+  background: var(--white);
+}
