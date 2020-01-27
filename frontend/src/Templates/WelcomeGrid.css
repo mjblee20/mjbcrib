@@ -33,13 +33,15 @@
 
 /* Background flower animation styles */
 .flower-container {
-  height: 100vh;
-  width: 100vw;
-  z-index: 2;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--pink)
+  background: var(--white);
 }
 
 @-moz-keyframes spin {
@@ -74,9 +76,9 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -15em;
-  width: 30em;
-  height: 30em;
+  margin: -12.5em;
+  width: 25em;
+  height: 25em;
   /* border-radius: 50%; */
   border: 3px double var(--black);
 }
@@ -124,8 +126,8 @@
 }
 #pistil {
   position: absolute;
-  width: 30em;
-  height: 30em;
+  width: 25em;
+  height: 25em;
   /* background-color: var(--white); */
   /* border: 1px solid var(--black); */
   border-radius: 50%;

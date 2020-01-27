@@ -1,11 +1,9 @@
 // Import Dependencies
 import React from 'react';
 
-// Import Stylings
-import './About.css';
+// Import Components
 import AboutGrid from '../Templates/AboutGrid';
 
-// Import Components
 
 
 const About = (props) => {

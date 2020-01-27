@@ -1,10 +1,7 @@
 // Import Dependencies
 import React from 'react';
 
-// Import Stylings
-import './AboutGrid.css';
-import PageHeader from '../Organisms/PageHeader';
-import PageFooter from '../Organisms/PageFooter';
+// Image Imports
 import AboutMain from '../Images/AboutMain.JPG';
 import YawningR from '../Images/image-gallery/YawningR.JPG';
 import ToyR from '../Images/image-gallery/ToyR.JPG';
@@ -22,7 +19,15 @@ import Dewey3 from '../Images/image-gallery/Dewey3.JPG';
 import Dewey4 from '../Images/image-gallery/Dewey4.JPG';
 import ChillR from '../Images/image-gallery/ChillR.JPG';
 
+// Styling Imports
+import './AboutGrid.css';
+
 // Import Components
+import PageHeader from '../Organisms/PageHeader';
+import PageFooter from '../Organisms/PageFooter';
+import GridImage from '../Atoms/GridImage';
+import BioContent from '../Compounds/BioContent';
+
 
 const SKILLSET = [ 
   {
@@ -100,22 +105,10 @@ const AboutGrid = (props) => {
       <PageHeader title='About' color='var(--red)'/>
       
       <div className='self-portrait'>
-        <div className='imgbox'>
-          <img src={AboutMain} alt='Bill Lee' />
-        </div>
+        <GridImage source={AboutMain}   />
       </div>
 
-      <div className='bio-content'>
-        <div className='bio-content-header'>
-          <h2>A Little Spiel...</h2>
-        </div>
-        
-        <div className='bio-content-body'>
-          <p id='bio'>
-            Hi there! I'm Ming Jung Lee, you can call me Bill. I'm a passionate full stack web developer with a background in Biophysics looking to create intuitive, efficient, and user-friendly interfaces. I have recently completed a full-stack development bootcamp course and currently is looking for a position in which I can quickly absorb new information and learn new skills and apply the knowledge in real world web applications.
-          </p>
-        </div>
-      </div>
+      <BioContent />
       
       <div className='skillset-container'>
         <div id='skill-text-container'>

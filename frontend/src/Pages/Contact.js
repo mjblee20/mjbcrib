@@ -1,11 +1,9 @@
 // Import Dependencies
 import React from 'react';
 
-// Import Stylings
-import './Contact.css';
+// Import Components
 import ContactGrid from '../Templates/ContactGrid';
 
-// Import Components
 
 
 const Contact = (props) => {

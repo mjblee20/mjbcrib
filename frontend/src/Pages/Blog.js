@@ -1,9 +1,6 @@
 // Import Dependencies
 import React from 'react';
 
-// Import Stylings
-import './Blog.css';
-
 // Import Components
 import BlogGrid from '../Templates/BlogGrid';
 
