@@ -22,10 +22,6 @@ const BtnNavGrid = (props) => {
 
   return (
     <React.Fragment>
-
-      <div className='nav-btn-group'>
-
-      </div>
       
       <div className='nav-icon-container' id='nav-icon-container'>
         <div className='nav-icon' onClick={toggleHandler} onMouseEnter={toggleHandler}>

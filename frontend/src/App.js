@@ -8,7 +8,6 @@ import './App.css';
 //Import Components
 import Welcome from './Pages/Welcome';
 // import Home from './Pages/Home';
-import HorizNavGrid from './Templates/HorizNavGrid';
 import Blog from './Pages/Blog';
 import BtnNavGrid from './Templates/BtnNavGrid';
 import Home from './Pages/Home';

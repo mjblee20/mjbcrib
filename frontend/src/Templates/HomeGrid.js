@@ -3,9 +3,7 @@ import React from 'react';
 
 // Import Stylings
 import './HomeGrid.css';
-import PageHeader from '../Organisms/PageHeader';
 import HomeSections from '../Organisms/HomeSections';
-import PageFooter from '../Organisms/PageFooter';
 
 // Import Components
 

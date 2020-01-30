@@ -11,19 +11,19 @@ import LinkToButton from '../Atoms/LinkToButton';
 const WelcomeGrid = (props) => {
 
  
-  const createPetals = () => {
-    let petals = [];
-    for (var i = 0; i < 60; i++) {
-        // note: we add a key prop here to allow react to uniquely identify each
-        // element in this array. see: https://reactjs.org/docs/lists-and-keys.html
-        petals.push(<div className='petal-dots' key={i}></div>);
-    }
-    return (
-      <div className='flower-center'>
-        {petals}
-      </div>
-    );
-  }
+  // const createPetals = () => {
+  //   let petals = [];
+  //   for (var i = 0; i < 60; i++) {
+  //       // note: we add a key prop here to allow react to uniquely identify each
+  //       // element in this array. see: https://reactjs.org/docs/lists-and-keys.html
+  //       petals.push(<div className='petal-dots' key={i}></div>);
+  //   }
+  //   return (
+  //     <div className='flower-center'>
+  //       {petals}
+  //     </div>
+  //   );
+  // }
 
   return(
       <React.Fragment>
