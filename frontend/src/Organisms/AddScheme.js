@@ -13,7 +13,7 @@ export default function AddScheme() {
         <div>
           <label>
             Scheme Name:
-            <input type='text' className='scheme-name' />
+            <input type='text' className='name-form' />
           </label>
         </div>
           <label>

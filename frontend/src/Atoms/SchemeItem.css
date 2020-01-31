@@ -21,3 +21,7 @@
   margin: 10px;
   border-radius: 10px;
 }
+
+.scheme-cards:hover {
+  transform: scale(1.5);
+}

@@ -18,7 +18,6 @@ const StylesGrid = () => {
       {/* TODO: Eventually it's own js file */}
       <div className='styles-body'>
         <SchemeContainer />
-        <ProjectContainer />
       </div>
       
 

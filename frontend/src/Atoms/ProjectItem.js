@@ -1,5 +1,6 @@
 import React from 'react';
 import './ProjectItem.css';
+import Card from '../UI/Card';
 
 /**
  * 
@@ -7,20 +8,22 @@ import './ProjectItem.css';
  */
 function ProjectItem(props) {
   return (
-    <div>
-      {/* <div className="project-image">
-        <img src={props.image} alt='project image' />
-      </div> */}
-      <div className="project-title">
-        <h3>{props.name}</h3>
+    <Card className='project-card'>
+      <div className='project-item-container'>
+        <div className="project-image">
+          
+        </div>
+        <div className="project-title">
+          <h3>{props.name}</h3>
+        </div>
+        <div className="project-description">
+          <p>{props.description}</p>
+        </div>
+        <div className='project-github'>
+          <div>{props.github}</div>
+        </div>
       </div>
-      <div className="project-description">
-        <p>{props.description}</p>
-      </div>
-      <div className='project-github'>
-        <div>{props.github}</div>
-      </div>
-    </div>
+    </Card>
   )
 }
 

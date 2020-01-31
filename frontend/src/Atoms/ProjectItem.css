@@ -1,0 +1,13 @@
+.project-card {
+  align-self: center;
+  justify-self: center;
+  background: white;
+  height: 350px;
+  width: 500px;
+  margin: 100px 0;
+}
+
+.project-image {
+  height: 250px;
+  background: rgba(0, 0, 0, 0.5);
+}

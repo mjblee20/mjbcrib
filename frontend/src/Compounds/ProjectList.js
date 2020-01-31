@@ -1,4 +1,5 @@
 import React from 'react';
+import './ProjectList.css';
 import ProjectItem from '../Atoms/ProjectItem';
 
 /**
