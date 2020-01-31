@@ -1,12 +1,23 @@
 .scheme-item-container {
-  width: 200px;
-  
+  width: 350px;
+  height: 100%;
+  background: white; 
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .scheme-colors {
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: 150px;
 }
 
 .scheme-name {
+  font-size: 30px;
+  text-align: center;
+}
 
+.scheme-cards {
+  margin: 10px;
+  border-radius: 10px;
 }

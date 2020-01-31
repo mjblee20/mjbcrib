@@ -1,5 +1,6 @@
 import React from 'react';
 import './SchemeItem.css';
+import Card from '../UI/Card';
 
 /**
  * 
@@ -7,19 +8,27 @@ import './SchemeItem.css';
  */
 export default function SchemeItem(props) {
   return (
-    <div className='scheme-item-container'>
-      <div className='scheme-colors'>
-        {props.colors.map(color => {
-          return(
-            <div style={{ background: color }}>
-              <span>{color}</span>
-            </div>
-          );
-        })}
+    <Card className='scheme-cards'>
+      <div className='scheme-item-container'>
+
+        <div className='scheme-name'>
+          {props.name}
+        </div>
+
+        <hr />
+
+        <div className='scheme-colors'>
+          
+          {props.colors.map(color => {
+            return(
+              <div className='color-bar' style={{ background: color }}>
+                <span>{color}</span>
+              </div>
+            );
+          })}
+        </div>
+        
       </div>
-      <div className='scheme-name'>
-        {props.name}
-      </div>
-    </div>
+    </Card>
   )
 }

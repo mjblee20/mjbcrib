@@ -22,7 +22,7 @@ const ContactGrid = (props) => {
         {/* Interests */}
         {/* Contact Info */}
         {/* Fun animation */}
-        Rest of content
+        <div>C</div>
       </div>
       
       {/* TODO: Eventually it's own js file */}
