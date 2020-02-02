@@ -2,7 +2,7 @@
   align-self: center;
   justify-self: center;
   background: white;
-  height: 350px;
+  height: 465px;
   width: 500px;
   margin: 100px 0;
 }
@@ -10,4 +10,43 @@
 .project-image {
   height: 250px;
   background: rgba(0, 0, 0, 0.5);
+}
+
+.project-content {
+  padding: 10px;
+  height: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-areas:  'title        title'
+                        'description  description'
+                        'github       github';
+}
+
+.project-title {
+  grid-area: title;
+  padding: 10px 0;
+}
+
+.project-description {
+  grid-area: description;
+  height: 100px;
+}
+
+.project-description > p {
+
+  text-overflow: hidden;
+}
+
+.project-github {
+  grid-area: github;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.github-button {
+  height: 50px;
+  width: 100px;
+  background: transparent;
+  border: 1px solid black;
 }

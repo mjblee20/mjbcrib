@@ -17,10 +17,30 @@
     120px rows are reserved for page-headers and page-footers 
     middle repeat(auto, 1fr) is meant to auto create rows for every div
   */
-  grid-auto-rows: min-content;
+  grid-auto-rows: 120px 2fr 120px ;
   /* grid-template-rows: 120px repeat(auto, 1fr) 120px; */
   min-height: 100vh;
   min-width: 100%;
   background: var(--white);
   color: var(--black);
+}
+
+.contact-body {
+  grid-area: 2/2/2/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+}
+
+.contact-intro {
+  grid-row: 1;
+  grid-column: 1 / span 2;
+}
+
+.contact-message {
+  grid-area: 2/1/2/1;
+}
+
+.contact-info {
+  grid-area: 2/2/2/2;
 }
