@@ -43,7 +43,27 @@ const ContactGrid = (props) => {
           </div>
         </div>
         <div className="contact-info">
-
+          <div>
+            GitHub:
+          </div>
+          <div>
+            Facebook:
+          </div>
+          <div>
+            LinkedIn:
+          </div>
+          <div>
+            Google:
+          </div>
+          <div>
+            Email: 
+          </div>
+          <div>
+            Phone: 206-954-9043
+          </div>
+          <div>
+            Location: Seattle WA
+          </div>
         </div>
         
       </div>
