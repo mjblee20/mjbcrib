@@ -42,6 +42,12 @@
   grid-area: 2/1/2/1;
   align-self: center;
   justify-self: center;
+  padding: 40px;
+  border: 1px solid black;
+}
+
+.contact-message > div > h2 {
+  margin: 20px 0;
 }
 
 .contact-info {
@@ -60,6 +66,9 @@
   margin: 10px;
 }
 
+#response-type {
+  margin: 10px;
+}
 .name-input {
   display: block;
   height: 30px;

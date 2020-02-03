@@ -20,7 +20,7 @@ const StylesGrid = () => {
       </div>
       
 
-      <PageFooter title='Footer' />
+      <PageFooter title='' />
     </div>
   );
 }

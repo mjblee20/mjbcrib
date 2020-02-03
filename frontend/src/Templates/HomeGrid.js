@@ -19,7 +19,7 @@ const HomeGrid = (props) => {
       
       {/* TODO: Eventually it's own js file */}
 
-      {/* <PageFooter title='Footer' /> */}
+      {/* <PageFooter title='' /> */}
     </div>
   );
 }

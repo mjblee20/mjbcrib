@@ -69,7 +69,7 @@ const BlogGrid = () => {
           ))}
         </div>
 
-      <PageFooter title='Footer' />
+      <PageFooter title='' />
 
     </div>
   );

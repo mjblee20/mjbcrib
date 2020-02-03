@@ -23,7 +23,7 @@ const PortfolioGrid = (props) => {
       </div>
       
 
-      <PageFooter title='Footer' />
+      <PageFooter title='' />
     </div>
   );
 }

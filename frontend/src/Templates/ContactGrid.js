@@ -32,12 +32,13 @@ const ContactGrid = (props) => {
           <p>So what did you think? Got any opinions, compliments, suggestions, critiques? Feel free to send me an email or post a message on the site! Any input would be greatly appreciated. Also if there are some great resources you think can help feel free to post them here.</p>
         </div>
         <div className="contact-message">
-          <h1>TALK TO ME!</h1>
           <div>
+            
             <h2>You have any suggestions or critiques?</h2>
 
             <form className='message-form'>
               <label for="type">Type:</label>
+              <br />
               <select id="response-type" name="type">
                 <option value="critique">Critique</option>
                 <option value="compliment">Compliment</option>
@@ -97,7 +98,7 @@ const ContactGrid = (props) => {
       
       {/* TODO: Eventually it's own js file */}
 
-      <PageFooter title='Footer' />
+      <PageFooter title='' />
 
     </div>
   );

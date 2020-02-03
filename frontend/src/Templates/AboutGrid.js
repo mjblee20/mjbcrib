@@ -56,7 +56,7 @@ const AboutGrid = (props) => {
 
       <ImageGallery />
 
-      <PageFooter title='Footer' />
+      <PageFooter title='' />
     </div>
   );
 }
