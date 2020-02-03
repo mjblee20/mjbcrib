@@ -10,7 +10,7 @@ const LiftLinkToButton = (props) => {
         <span 
           className="text" 
           style={{
-            color: 'var(--white)'
+            color: 'white'
           }}
         >{props.children}</span>
         <span className="line -right"></span>

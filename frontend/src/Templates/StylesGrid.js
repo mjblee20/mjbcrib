@@ -6,7 +6,6 @@ import './StylesGrid.css';
 import PageHeader from '../Organisms/PageHeader';
 import PageFooter from '../Organisms/PageFooter';
 import SchemeContainer from '../Organisms/SchemeContainer';
-import ProjectContainer from '../Organisms/ProjectContainer';
 
 
 const StylesGrid = () => {

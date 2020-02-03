@@ -40,8 +40,46 @@
 
 .contact-message {
   grid-area: 2/1/2/1;
+  align-self: center;
+  justify-self: center;
 }
 
 .contact-info {
   grid-area: 2/2/2/2;
+  align-self: center;
+  justify-self: center;
+}
+
+.contact-info > div {
+  align-self: center;
+  display: flex;
+  align-items: center;
+}
+
+.contact-icons {
+  margin: 10px;
+}
+
+.name-input {
+  display: block;
+  height: 30px;
+  width: 300px;
+  font-size: 25px;
+  margin: 10px;
+}
+
+.email-input {
+  display: block;
+  height: 30px;
+  width: 300px;
+  font-size: 25px;
+  margin: 10px;
+}
+
+.message-input {
+  display: block;
+  height: 200px;
+  width: 400px;
+  font-size: 30px;
+  margin: 10px;
 }

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Card from '../UI/Card';
+import './AddScheme.css';
 
 export default function AddScheme() {
   const addScheme = (e) => { 
@@ -8,45 +10,57 @@ export default function AddScheme() {
   }
   
   return (
-    <div>
+    <div className='add-scheme-form'>
+
+    <Card>
       <form>
         <div>
           <label>
-            Scheme Name:
-            <input type='text' className='name-form' />
+            Scheme Name: 
           </label>
+          <input type='text' className='name-form' />
         </div>
+
+        <div>
           <label>
-            Color1 Hex Code:
-            <input type='text' className='color-hex' />
+            Color1 Hex Code: 
           </label>
+          <input type='text' className='color-hex' />
+        </div>
+
         <div>
           <label>
             Color2 Hex Code:
-            <input type='text' className='color-hex' />
           </label>
+          <input type='text' className='color-hex' />
         </div>
+
         <div>
           <label>
             Color3 Hex Code:
-            <input type='text' className='color-hex' />
           </label>
+          <input type='text' className='color-hex' />
         </div>
+
         <div>
           <label>
             Color4 Hex Code:
-            <input type='text' className='color-hex' />
           </label>
+          <input type='text' className='color-hex' />
         </div>
+        
         <div>
           <label>
             Color5 Hex Code:
-            <input type='text' className='color-hex' />
           </label>
+          <input type='text' className='color-hex' />
         </div>
         
-        <button onClick={addScheme}>Add New Color Scheme</button>
+        <button onClick={addScheme} className='add-scheme-button'>Add New Color Scheme</button>
       </form>
+
+    </Card>
     </div>
+    
   )
 }

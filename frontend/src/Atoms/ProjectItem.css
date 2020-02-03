@@ -3,13 +3,23 @@
   justify-self: center;
   background: white;
   height: 465px;
-  width: 500px;
+  width: 400px;
   margin: 100px 0;
 }
 
 .project-image {
   height: 250px;
   background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.5);
+
+}
+
+.project-image:hover {
+  color: rgba(255, 255, 255, 0.9);
+  transition: all 0.5s ease-in-out;
 }
 
 .project-content {
@@ -45,8 +55,20 @@
 }
 
 .github-button {
-  height: 50px;
-  width: 100px;
+  height: 100%;
+  width: 80px;
   background: transparent;
-  border: 1px solid black;
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.github-icon {
+  text-decoration: none;
+  color: black;
+}
+
+.github-icon::after {
+  text-decoration: none;
 }

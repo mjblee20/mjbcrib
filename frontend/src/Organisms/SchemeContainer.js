@@ -23,7 +23,9 @@ export default function SchemeContainer() {
   return (
     <div className='scheme-content-container'>
       <SchemeList schemes={SCHEMES} />
-      <AddScheme />
+      <div>
+        <AddScheme />
+      </div>
     </div>
   )
 }

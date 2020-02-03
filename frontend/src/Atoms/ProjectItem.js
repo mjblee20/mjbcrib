@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './ProjectItem.css';
 import Card from '../UI/Card';
-import { Link } from 'react-router-dom';
+import { DiCodeBadge, DiGithubBadge } from "react-icons/di";
+import { IconContext } from 'react-icons';
 
 /**
  * 
@@ -36,7 +37,7 @@ function ProjectItem(props) {
     <Card className='project-card'>
       <div className='project-item-container'>
         <div className="project-image">
-          
+          <DiCodeBadge size={100} />
         </div>
         <div className='project-content'>
           <div className="project-title">
@@ -53,8 +54,12 @@ function ProjectItem(props) {
             </button>
           </div>
           <div className='project-github'>
-            <button className='github-button'> 
-              <a href={props.github}>Github</a>
+            <button type='button' className='github-button' href={props.github}> 
+              {/* <a href={props.github}> */}
+                <IconContext.Provider value= {{ className: 'github-icon'}}>
+                  <DiGithubBadge size={50}/>
+                </IconContext.Provider>
+              {/* </a> */}
             </button>
           </div>
         </div>
