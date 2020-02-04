@@ -3,3 +3,9 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
 }
+
+@media (max-width: 728px) {
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+}

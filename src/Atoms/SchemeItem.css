@@ -25,3 +25,19 @@
 .scheme-cards:hover {
   transform: scale(1.5);
 }
+
+@media (max-width: 728px) {
+  .scheme-item-container {
+    width: 350px;
+    height: 100%;
+    background: white; 
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .scheme-cards {
+    width: 350px;
+    align-self: center;
+    justify-self: center;
+  }
+}

@@ -16,8 +16,15 @@
   height: 40px;
   padding: 10px;
   margin: 10px 10px 0 0;
+  text-align: center;
 }
 
 .add-scheme-form form > div {
   margin: 5px;
+}
+
+@media (max-width: 728px) {
+  .add-scheme-form {
+    width: 100%;
+  }
 }

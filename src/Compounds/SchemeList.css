@@ -9,9 +9,6 @@
 @media (max-width: 728px) {
   .scheme-list {
     grid-template-columns: 1fr;
+    margin: 0;
   }
-}
-
-@media (min-width: 960px) {
-  
 }

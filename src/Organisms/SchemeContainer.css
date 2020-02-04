@@ -1,4 +1,10 @@
-.scheme-content-container{
+.scheme-content-container {
   place-self: center;
   margin-bottom: 100px;
+}
+
+@media (max-width: 728px) {
+  .scheme-content-container {
+    display:grid;
+  }
 }
