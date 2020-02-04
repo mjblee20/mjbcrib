@@ -32,42 +32,56 @@ const posts = [
 
 
 const BlogGrid = () => {
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('post new blog');
+  }
+
   return(
     <div className='blog-page-container'>
 
       <PageHeader title='Blog' color='var(--navy)'/>
 
-        {/* TODO: Eventually it's own Compound js file */}
-        <div className='blog-posts-container'>
+      {/* TODO: Eventually it's own Compound js file */}
+      <div className='blog-posts-container'>
 
-          {posts.map( post => (
-            /* TODO: Eventually it's own Compound js file */
-            <div className='post'>
-              {/* TODO: Eventually it's own Atom js file */}
-              <div className='poster-row'>
-                <div className='avatar'>
-                  <div className='headshot'> 
-                    {post.avatar}
-                  </div>
+        {posts.map( post => (
+          /* TODO: Eventually it's own Compound js file */
+          <div className='post'>
+            {/* TODO: Eventually it's own Atom js file */}
+            <div className='poster-row'>
+              <div className='avatar'>
+                <div className='headshot'> 
+                  {post.avatar}
                 </div>
-                <div className='poster-info'>
-                  <div className='poster'>
-                    Poster
-                  </div>
-                  <div className='post-time'>
-                    Post Time
-                  </div>
-                </div>
-                
-
-                
               </div>
-              {/* TODO: Eventually it's own Atom js file */}
-              <div className='post-content'>{post.content}</div>
+              <div className='poster-info'>
+                <div className='poster'>
+                  Bill
+                </div>
+                <div className='post-time'>
+                  Today
+                </div>
+              </div>
+              
+
+              
             </div>
-            
-          ))}
-        </div>
+            {/* TODO: Eventually it's own Atom js file */}
+            <div className='post-content'>{post.content}</div>
+          </div>
+        ))}
+      </div>
+
+      <form className="new-post-form">
+        <h1>New Post</h1>
+        <textarea className='new-post-content'>
+
+        </textarea>
+
+        <button type='button' onClick={handleSubmit}>Submit</button>
+      </form>
 
       <PageFooter title='' />
 
