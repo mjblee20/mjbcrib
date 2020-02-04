@@ -49,9 +49,9 @@ function ProjectItem(props) {
             <p>{props.description}</p>
             {/* TODO: Show read less button */}
             {/* TODO: Only show read more if description is more than the space can hold*/}
-            <button type='button' onClick={showTextHandler}>
+            {/* <button type='button' onClick={showTextHandler}>
               {btn}
-            </button>
+            </button> */}
           </div>
           <div className='project-github'>
             <button type='button' className='github-button' href={props.github}> 
