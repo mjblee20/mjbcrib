@@ -33,3 +33,11 @@
   /* Animation for when mouse is on top of div */
   transform: scale(1.5);
 }
+
+/* Layout styles -----------------------------------*/
+@media (max-width: 728px) {
+  .skill-list {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}

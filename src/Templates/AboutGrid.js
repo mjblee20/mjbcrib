@@ -32,9 +32,9 @@ const AboutGrid = (props) => {
       
       <SkillnExp />
 
-      {/* <AboutInfo /> */}
+      <AboutInfo />
 
-      {/* <ImageGallery /> */}
+      <ImageGallery />
 
       <PageFooter title='' />
     </div>

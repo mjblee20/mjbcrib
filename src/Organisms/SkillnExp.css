@@ -6,3 +6,16 @@
   background: var(--red);
   color: var(--white)
 }
+
+
+/* Layout styles -----------------------------------*/
+@media (max-width: 728px) {
+  .skillset-container {
+    grid-column: 1 / span 5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    background: var(--red);
+    color: var(--white)
+  }
+}

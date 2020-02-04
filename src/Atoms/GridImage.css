@@ -1,8 +1,12 @@
-.imgbox > img {
-  max-width: 100%;
-  height: auto;
+.imgbox {
+  display: grid;
+  height: 100%;
 }
 
+.imgbox > img {
+  width: 100%;
+  height: auto;
+}
 /* Layout styles -----------------------------------*/
 @media (max-width: 728px) {
   .imgbox > img {
