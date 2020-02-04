@@ -1,0 +1,19 @@
+{
+  "name": "mjbcrib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjblee20/mjbcrib.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mjblee20/mjbcrib/issues"
+  },
+  "homepage": "https://github.com/mjblee20/mjbcrib#readme"
+}
