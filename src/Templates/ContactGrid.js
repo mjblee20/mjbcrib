@@ -22,7 +22,7 @@ const ContactGrid = (props) => {
   return(
     <div className='contact-grid-container'>
 
-      <PageHeader title='Contact'  color='var(--teal)'/>
+      <PageHeader title=''  color='var(--teal)'/>
       
       <div className='contact-body'>
         <div className="contact-intro">

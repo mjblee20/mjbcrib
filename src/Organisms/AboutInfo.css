@@ -1,0 +1,43 @@
+/* Habit Section Styling */
+.habits {
+  margin: 40px 0 80px 0;
+  grid-column: 3;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.habits-header {
+  margin: 40px 0px;
+  /* padding: 10px; */
+  color: var(--red);
+  display: block;
+  text-align: center;
+}
+
+.habits-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+}
+
+/* Image Gallery Section Styling */
+.image-gallery {
+  grid-column: 1 / span 5;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  border-style: solid;
+  border-color: var(--red);
+  border-width: 20px 0 20px 0;
+}
+
+.imgbox {
+  display: grid;
+  height: 100%;
+}
+
+.imgbox > img {
+  width: 100%;
+  height: auto;
+}
+
