@@ -13,7 +13,7 @@ import PageFooter from '../Organisms/PageFooter';
 import GridImage from '../Atoms/GridImage';
 import BioContent from '../Compounds/BioContent';
 import ImageGallery from '../Compounds/ImageGallery';
-import SkillnExp from './../Organisms/SkillnExp';
+import SkillnExp from '../Organisms/SkillnExp';
 
 
 

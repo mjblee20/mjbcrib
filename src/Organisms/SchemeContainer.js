@@ -2,7 +2,7 @@ import React from 'react';
 
 import './SchemeContainer.css';
 import AddScheme from './AddScheme';
-import SchemeList from './../Compounds/SchemeList'
+import SchemeList from '../Compounds/SchemeList'
 
 const SCHEMES = [
   {

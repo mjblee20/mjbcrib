@@ -1,6 +1,6 @@
 import React from 'react';
 
-import HomeSectionChoice from './../Compounds/HomeSectionChoice';
+import HomeSectionChoice from '../Compounds/HomeSectionChoice';
 import './HomeSections.css';
 
 const SECTIONS = [

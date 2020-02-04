@@ -1,6 +1,6 @@
 import React from 'react';
 
-import StylesGrid from './../Templates/StylesGrid';
+import StylesGrid from '../Templates/StylesGrid';
 
 const Styles = (props) => {
   return( 
