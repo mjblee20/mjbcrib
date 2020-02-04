@@ -51,9 +51,9 @@ function App() {
             <Contact />
           </Route>
 
-          <Route path='/blog'>
+          {/* <Route path='/blog'>
             <Blog />
-          </Route>
+          </Route> */}
 
           <Route path='/styles'>
             <Styles />
