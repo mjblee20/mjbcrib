@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { TiSocialGithubCircular, TiSocialLinkedinCircular } from "react-icons/ti";
+import { IconContext } from "react-icons";
 import './Contact.css';
 
 // TODO: Implement sending an email to me using this form
@@ -20,6 +21,7 @@ import './Contact.css';
 function Contact() {
   const [name, setName] = useState('');
   const [title, setTitle] = useState('');
+  const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [toggled, setToggle] = useState(false);
 
@@ -54,34 +56,55 @@ function Contact() {
           <h3>Email: mjblee20@gmail.com</h3>
           <h3>Location: Bellevue, WA</h3>
           <ul className='noStyle'>
-            <li><a href='https://github.com/mjblee20'><TiSocialGithubCircular size={60}/></a></li>
-            <li><a href='https://www.linkedin.com/in/mjblee20/'><TiSocialLinkedinCircular size={60}/></a></li>
+            <li>
+              <a href='https://github.com/mjblee20'>
+                <IconContext.Provider value={{ color: "var(--white)"}}>
+                  <TiSocialGithubCircular size={50}/>
+                </IconContext.Provider>
+              </a>
+            </li>
+            <li>
+              <a href='https://www.linkedin.com/in/mjblee20/'>
+                <IconContext.Provider value={{ color: "var(--white)"}}>
+                  <TiSocialLinkedinCircular size={50}/>
+                </IconContext.Provider>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
 
       <div id='contact-form'>
-        <h2 style={{ marginLeft: '10px' }}>What Did You Think?</h2>
         <form >  {/* onSubmit={handleSubmit} */}
-          <div>
+          <div id="sender-info">
             <input 
               type='text'
               name='name'
               placeholder='Name' 
               value={name} 
+              style={{ width: "45%"}}
               onChange={(e) => { 
                 setName(e.target.value) 
               }}
               required
             />
-          </div>
-          
-          <div>
+            <input 
+              type='text' 
+              name='email'
+              placeholder='Email' 
+              value={email} 
+              style={{ width: "45%"}}
+              onChange={(e) =>{ 
+                setEmail(e.target.value) 
+              }}
+              required
+            />
             <input 
               type='text' 
               name='title'
               placeholder='Title' 
               value={title} 
+              style={{ width: "100%"}}
               onChange={(e) =>{ 
                 setTitle(e.target.value) 
               }}
@@ -89,15 +112,12 @@ function Contact() {
             />
           </div>
           
-          <div>
+          <div id="sender-message">
             <textarea 
               type='text'
               name='message'
-              placeholder='Message' 
+              placeholder='...' 
               value={message} 
-              style={{ 
-                height: '250px' 
-              }} 
               onChange={(e) =>{ 
                 setMessage(e.target.value) 
               }}
