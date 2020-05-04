@@ -35,7 +35,7 @@ function Main() {
         {/* TODO: Animate Buttons */}
         <ul id="btn-sect" className='noStyle'>
           <li><Link to="/portfolio">View My Work</Link></li>
-          <li><Link to="/contact">Contact Me</Link></li>
+          <li><Link to="/contact">Hire Me</Link></li>
         </ul>
       </div>
 

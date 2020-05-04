@@ -3,19 +3,19 @@ import { TiSocialGithubCircular, TiSocialLinkedinCircular } from "react-icons/ti
 import './Contact.css';
 
 // TODO: Implement sending an email to me using this form
-const DUMMY = [
-  {
-    id: 1,
-    name: 'Bill',
-    title: 'CheckIn',
-    message: 'Keep at it!'
-  },{
-    id: 2,
-    name: 'Ruby',
-    title: 'CheckIn',
-    message: 'Keep at it!'
-  }
-]
+// const DUMMY = [
+//   {
+//     id: 1,
+//     name: 'Bill',
+//     title: 'CheckIn',
+//     message: 'Keep at it!'
+//   },{
+//     id: 2,
+//     name: 'Ruby',
+//     title: 'CheckIn',
+//     message: 'Keep at it!'
+//   }
+// ]
 
 function Contact() {
   const [name, setName] = useState('');
@@ -24,16 +24,16 @@ function Contact() {
   const [toggled, setToggle] = useState(false);
 
 
-  const handleSubmit = event => {
-    event.preventDefault();
-    DUMMY.push({
-      id: DUMMY.length + 1,
-      name: name, 
-      title: title, 
-      message: message
-    })
-    // TODO: Modal confirmation
-  }
+  // const handleSubmit = event => {
+  //   event.preventDefault();
+  //   DUMMY.push({
+  //     id: DUMMY.length + 1,
+  //     name: name, 
+  //     title: title, 
+  //     message: message
+  //   })
+  //   // TODO: Modal confirmation
+  // }
 
   const handleToggle = (e) => {
     e.preventDefault();
@@ -43,17 +43,16 @@ function Contact() {
     <div id='contact-grid'>
 
       <div id='contact-head'>
-        <h1 id='contact-title'>Contact Me</h1>
+        <h1 id='contact-title'>Looking to Hire?</h1>
         <hr/>
         <p id='contact-message'>
-          Please feel free to leave an honest opinion of my website. I'd love to hear what your thoughts/critiques/suggestions are. 
-          <br/>
-          <br/>
-          (P.S. I do and will read all of them!)
+          Please feel free to shoot me an email with the form!
         </p>
         <hr/>
         <div id='info'>
+          <h3>Phone: (206)954-9043</h3>
           <h3>Email: mjblee20@gmail.com</h3>
+          <h3>Location: Bellevue, WA</h3>
           <ul className='noStyle'>
             <li><a href='https://github.com/mjblee20'><TiSocialGithubCircular size={60}/></a></li>
             <li><a href='https://www.linkedin.com/in/mjblee20/'><TiSocialLinkedinCircular size={60}/></a></li>
@@ -63,7 +62,7 @@ function Contact() {
 
       <div id='contact-form'>
         <h2 style={{ marginLeft: '10px' }}>What Did You Think?</h2>
-        <form onSubmit={handleSubmit}>
+        <form >  {/* onSubmit={handleSubmit} */}
           <div>
             <input 
               type='text'
@@ -106,11 +105,11 @@ function Contact() {
             />
           </div>
           
-          <input type='submit' id='contact-btn' onClick={handleSubmit} />
+          <input type='submit' id='contact-btn'/> {/* onClick={handleSubmit} */}
 
         </form>
       </div>
-      <div id="posts-container">
+      {/* <div id="posts-container">
         {toggled ? (
           <button type='button' onClick={handleToggle}>View Messages</button>
         ) : (
@@ -131,7 +130,7 @@ function Contact() {
             ))}
           </ul>
         )}
-      </div>
+      </div> */}
     
     </div>
   )

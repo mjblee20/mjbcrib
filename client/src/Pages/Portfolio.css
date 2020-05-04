@@ -35,7 +35,7 @@
 }
 
 .hover-container .hover-card:hover .face.face1 {
-  background: var(--cardinal);
+  background: linear-gradient(315deg, var(--cardinal) 0%, var(--flame) 74%);;
   transform: translateY(0);
 }
 
