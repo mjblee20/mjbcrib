@@ -17,8 +17,8 @@ function Navbar() {
     
         <ul className='dropdown-content noStyle'>
           <li><NavLink to='/'>Home</NavLink></li>
-          <li><NavLink to='/about'>About</NavLink></li>
-          <li><NavLink to='/portfolio'>Portfolio</NavLink></li>
+          <li><NavLink to='/about'>About Me</NavLink></li>
+          <li><NavLink to='/portfolio'>Projects</NavLink></li>
           <li><NavLink to='/contact'>Contact</NavLink></li>
         </ul>
       </div>

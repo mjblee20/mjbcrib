@@ -26,7 +26,7 @@
 
 .hover-container .hover-card .face.face1 {
   position: relative;
-  background: var(--black);
+  background: var(--lightgrey);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,7 +35,7 @@
 }
 
 .hover-container .hover-card:hover .face.face1 {
-  background: var(--turqoise);
+  background: var(--cardinal);
   transform: translateY(0);
 }
 
@@ -51,14 +51,14 @@
 .hover-container .hover-card .face.face1 .content h3 {
   margin: 10px 0 0;
   padding: 0;
-  color: var(--cream);
+  color: var(--white);
   text-align: center;
   font-size: 1.5em;
 }
 
 .hover-container .hover-card .face.face2 {
   position: relative; 
-  background: var(--cream);
+  background: var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,7 +81,7 @@
   display: inline-block;
   text-decoration: none;
   font-weight: 900;
-  color: var(--black);
+  color: var(--white);
   padding: 5px;
 }
 

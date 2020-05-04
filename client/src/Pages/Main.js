@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './Main.css';
+import Coffee from '../Images/coffee.png';
 import { Link } from 'react-router-dom';
 
 function Main() {
@@ -13,6 +14,7 @@ function Main() {
           <p>
             Hi,
             <br/> 
+            {/* TODO: Animate Bill */}
             I'm <span id="name">Bill.</span> 
             <br/>
             Junior Web Developer
@@ -30,12 +32,15 @@ function Main() {
       </div>
       
       <div id="btn-sect">
+        {/* TODO: Animate Buttons */}
         <ul id="btn-sect" className='noStyle'>
           <li><Link to="/portfolio">View My Work</Link></li>
           <li><Link to="/contact">Contact Me</Link></li>
         </ul>
       </div>
 
+
+      <img src={Coffee} alt="a sketch of a coffee cup" id="main-image"/>
     </div>
   )
 }

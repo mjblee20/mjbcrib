@@ -17,8 +17,14 @@
 }
 
 #about-title {
-  font-size: 4em;
+  position: absolute;
+  top: 100px;
+  left: 150px;
+  font-family: 'Oswald';
+  font-size: 6em;
   font-weight: bold;
+  opacity: 1;
+  color: var(--lightgrey);
 }
 
 #spiel {
