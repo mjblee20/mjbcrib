@@ -1,0 +1,106 @@
+#contact-grid {
+  height: 100vh;
+  width: 100vw;
+  padding: 100px;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+#posts-container {
+  position: relative;
+  grid-area: 2/1/2/span 2;
+  background: var(--cream);
+  border-radius: 20px;
+  padding: 50px;
+  margin: 30px;
+}
+
+
+
+
+
+
+
+#contact-head {
+  grid-area: 1/1/1/1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: var(--cream);
+  border-radius: 20px;
+  padding: 50px;
+  margin: 30px;
+  text-align: center;
+}
+
+#contact-title {
+  font-size: 4em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#contact-message {
+  margin: 40px;
+}
+
+#info {
+  margin-top: 40px;
+}
+
+#info ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#info a {
+  color: var(--black);
+}
+
+
+
+
+
+#contact-form {
+  position: relative;
+  grid-area: 1/2/1/2;
+  background: var(--cream);
+  border-radius: 20px;
+  padding: 50px;
+  margin: 30px;
+}
+
+#contact-form div {
+  margin: 10px;
+}
+
+#contact-form div input {
+  padding: 5px;
+  width: 100%;
+  border: 3px dotted var(--turqoise);
+  background: var(--cream);
+  font-size: 20px;
+}
+
+#contact-form textarea {
+  padding: 5px;
+  width: 100%;
+  border: 3px dotted var(--turqoise);
+  background: var(--cream);
+  font-size: 20px;
+}
+
+#contact-btn {
+  position: absolute;
+  background: var(--brown);
+  color: var(--cream);
+  border-bottom: 3px solid var(--turqoise);
+  border-radius: 15px;
+  font-size: 16px;
+  padding: 5px 10px;
+  margin: 10px;
+  bottom: 30px;
+  right: 60px;
+}

@@ -1,19 +1,11 @@
-# mjbcrib 
-## An Interactive Portfolio
+# My Portfolio Page
+------
+## MERN Stack App
+  * MongoDB (NoSQL Database)
+  * Express (Node Framework)
+  * React (Javascript Library for UI)
+  * Node (Javascript Runtime)
 
-## MERN Stack Website
-* MongoDB (not yet implimented)
-* Express.js (not yet implimented)
-* React.js
-* Node.js (not yet implimented)
-
-## Side Notes
-Implemented Atomic Design for File Structures.
-
-#### NPM Packages
-react-router-dom
-
-####
-
-
-
+## Dev Tools
+  * Figma (Layouts)
+  * 

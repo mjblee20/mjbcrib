@@ -1,7 +1,0 @@
-.check-in-btn > button {
-  height: 60px;
-  width: 100%;
-  background: var(--red);
-  color: var(--skin);
-  font-size: 24px;
-}
