@@ -15,8 +15,8 @@ function Portfolio() {
               {/* <img className='icon-img' src={Sketch} alt='icon'/> */}
               <h3>In or Out</h3>
               <div className="btn-grp">
-                <a href="https://github.com/WillCoe/Project1/"><TiSocialGithubCircular size={20}/></a>
-                <a href="https://willcoe.github.io/Project1/"><TiRss size={20}/></a>
+                <a href="https://github.com/WillCoe/Project1/"><TiSocialGithubCircular size={30}/></a>
+                <a href="https://willcoe.github.io/Project1/"><TiRss size={30}/></a>
               </div>
             </div>
           </div>
@@ -35,8 +35,8 @@ function Portfolio() {
               {/* <img className='icon-img' src={Startup} alt='icon'/> */}
               <h3>InstaPotty</h3>
               <div className="btn-grp">
-                <a href="https://github.com/ivancho277/fancyBathroom/"><TiSocialGithubCircular size={20}/></a>
-                <a href="instapotty.herokuapp.com/"><TiRss size={20}/></a>
+                <a href="https://github.com/ivancho277/fancyBathroom/"><TiSocialGithubCircular size={30}/></a>
+                <a href="instapotty.herokuapp.com/"><TiRss size={30}/></a>
               </div>
             </div>
           </div>
@@ -56,8 +56,8 @@ function Portfolio() {
               {/* <img className='icon-img' src={Data} alt='icon'/> */}
               <h3>Habits</h3>
               <div className="btn-grp">
-                <a href="https://github.com/mjblee20/habits"><TiSocialGithubCircular size={20}/></a>
-                <a href="#"><TiRss size={20}/></a>
+                <a href="https://github.com/mjblee20/habits"><TiSocialGithubCircular size={30}/></a>
+                <a href="#"><TiRss size={30}/></a>
               </div>
             </div>
           </div>

@@ -9,25 +9,36 @@
 }
 
 #content {
-  width: 100%;
-  height: 100%;
-  margin: 10px;
-  padding: 100px;
-  border-radius: 50px;
+  margin-top: 150px;
+  width: 85%;
+  font-size: 22px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 80px;
+}
+
+#spiel {
+  padding-top: 100px;
+  align-content: center;
+  vertical-align: middle;
 }
 
 #about-title {
   position: absolute;
-  top: 100px;
-  left: 150px;
-  font-family: 'Oswald';
+  display:flex;
+  justify-content: center;
+  top: 50px;
+  font-family: "Oswald";
   font-size: 6em;
-  font-weight: bold;
-  opacity: 1;
-  color: var(--lightgrey);
+  font-weight: 700;
+  opacity: .3;
+  font-style: italic;
+  color: var(--white);
+  z-index: -1;
 }
 
-#spiel {
-  margin: 100px;
-  font-size: 22px;
+#portrait > img {
+  height: 400px;
+  border-radius: 50%;
+  border: 10px var(--lightgrey) solid;
 }
