@@ -39,8 +39,8 @@ function Main() {
         </ul>
       </div>
 
-
       <img src={Coffee} alt="a sketch of a coffee cup" id="main-image"/>
+      
     </div>
   )
 }

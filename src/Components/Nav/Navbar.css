@@ -63,9 +63,14 @@
 } */
 
 .dropdown-content > li > a {
+  width: 100%;
   font-size: 20px;
   text-decoration: none;
   color: #000;
+}
+
+.selected {
+  background: var(--flame);
 }
 
 

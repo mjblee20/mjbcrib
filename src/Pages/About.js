@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Portrait from './../Images/portrait.JPG';
+import Portrait from '../Images/portrait.JPG';
 import './About.css';
 
 function About() {
@@ -13,7 +13,7 @@ function About() {
 
       <div id="content">
         <div id="portrait">
-          <img src={Portrait} alt="Image of me!"/>
+          <img src={Portrait} alt="Me"/>
         </div>
         <p id='spiel'>
           Hi, my name is Ming Jung Lee and I go by Bill. I'm a young and passionate <span>Full Stack Web Developer</span> with a background in Biophysics looking to create simple, intuitive, and user-friendly web applications. I am proficient in the MERN Stack and looking to expand my knowledge in the web development field.

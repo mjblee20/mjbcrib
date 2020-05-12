@@ -16,10 +16,10 @@ function Navbar() {
         </div>
     
         <ul className='dropdown-content noStyle'>
-          <li><NavLink to='/'>Home</NavLink></li>
-          <li><NavLink to='/about'>About</NavLink></li>
-          <li><NavLink to='/portfolio'>Portfolio</NavLink></li>
-          <li><NavLink to='/contact'>Contact</NavLink></li>
+          <li><NavLink to='/' activeClassName="selected">Home</NavLink></li>
+          <li><NavLink to='/about' activeClassName="selected">About</NavLink></li>
+          <li><NavLink to='/portfolio' activeClassName="selected">Portfolio</NavLink></li>
+          <li><NavLink to='/contact' activeClassName="selected">Contact</NavLink></li>
         </ul>
       </div>
     </div>
