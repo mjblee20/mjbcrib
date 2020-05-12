@@ -41,20 +41,21 @@
   height: 0px;
   width: 150px;
   z-index: 100;
-  background: rgb( 255, 255, 255, 0.4);
+  background: var(--black);
   transition: height 1s;
   overflow: hidden;
 }
 
 #nav-dropdown:hover .dropdown-content {
-  height: 200px;
+  height: 210px;
   transition: height 1s;
 }
 
 .dropdown-content > li {
+  background: var(--flame);
   padding: 10px;
   margin: 5px;
-  background: rgb( 0, 0, 0, 0.4);
+  border: solid 1px;
 }
 
 /* #nav-dropdown:hover .dropdown-content > li {
@@ -62,17 +63,16 @@
   transition: 1s;
 } */
 
+.selected {
+  font-weight: 600;
+}
+
 .dropdown-content > li > a {
   width: 100%;
   font-size: 20px;
   text-decoration: none;
-  color: #000;
+  color: var(--black);
 }
-
-.selected {
-  background: var(--flame);
-}
-
 
 @keyframes dropfadein {
   /* Right now just implement the drop in bit */
