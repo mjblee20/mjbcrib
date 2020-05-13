@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { TiSocialGithubCircular, TiSocialLinkedinCircular } from "react-icons/ti";
 import { IconContext } from "react-icons";
 import './Contact.css';
-
 // TODO: Implement sending an email to me using this form
 // const DUMMY = [
 //   {
@@ -34,13 +33,15 @@ function Contact() {
   //     title: title, 
   //     message: message
   //   })
-  //   // TODO: Modal confirmation
+  //   
   // }
 
+  // TODO: Modal confirmation of an auto-reply email confirmation.
   const handleToggle = (e) => {
     e.preventDefault();
     setToggle(!toggled);
   }
+  
   return (
     <div id='contact-grid'>
 
