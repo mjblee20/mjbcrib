@@ -22,24 +22,11 @@ function Contact() {
   const [title, setTitle] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [toggled, setToggle] = useState(false);
-
-
-  // const handleSubmit = event => {
-  //   event.preventDefault();
-  //   DUMMY.push({
-  //     id: DUMMY.length + 1,
-  //     name: name, 
-  //     title: title, 
-  //     message: message
-  //   })
-  //   
-  // }
 
   // TODO: Modal confirmation of an auto-reply email confirmation.
-  const handleToggle = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    setToggle(!toggled);
+
   }
   
   return (
@@ -77,7 +64,7 @@ function Contact() {
       </div>
 
       <div id='contact-form'>
-        <form >  {/* onSubmit={handleSubmit} */}
+        <form action='mailto:mjblee20@gmail.com' method='post' enctype="text/plain">  {/* onSubmit={handleSubmit} */}
           <div id="sender-info">
             <input 
               type='text'
@@ -90,6 +77,7 @@ function Contact() {
               }}
               required
             />
+            {/* TODO: validation for the email entry. */}
             <input 
               type='text' 
               name='email'
@@ -127,7 +115,7 @@ function Contact() {
             />
           </div>
           
-          <input type='submit' value='Send Message' id='contact-btn'/> {/* onClick={handleSubmit} */}
+          <input type='submit' value='Send Message' id='contact-btn' onClick={handleSubmit}/> 
 
         </form>
       </div>

@@ -57,7 +57,8 @@ function Portfolio() {
               <h3>Habits</h3>
               <div className="btn-grp">
                 <a href="https://github.com/mjblee20/habits"><TiSocialGithubCircular size={30}/></a>
-                <a href="#"><TiRss size={30}/></a>
+                {/* Deploy this site. */}
+                {/* <a href="#"><TiRss size={30}/></a> */}
               </div>
             </div>
           </div>
@@ -65,7 +66,7 @@ function Portfolio() {
             <div className="content">
               <h4>Solo Project</h4>
               <br/>
-              <p>A web app to help those wishing to improve themselves keep track of their habit building progress.</p>
+              <p>A web app to help those who wish to improve themselves keep track of their habit building progress.</p>
             </div>
           </div>
         </div>
