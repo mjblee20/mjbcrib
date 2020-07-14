@@ -11,13 +11,13 @@ function Main() {
       <div id="main-sect">
         <div id="main-title">
 
-          <p>
-            Hi
+          <p id='intro'>
+            Hi,
             <br/> 
             {/* TODO: Animate Bill */}
-            I'm <span id="name">Bill</span> 
+            I'm <span id="name">Bill.</span> 
             <br/>
-            Junior Web Developer
+            <span id='title'>Junior Web Developer</span>
           </p>
 
           <div id="main-description">
