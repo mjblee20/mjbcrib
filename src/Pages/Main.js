@@ -12,10 +12,10 @@ function Main() {
         <div id="main-title">
 
           <p>
-            Hi,
+            Hi
             <br/> 
             {/* TODO: Animate Bill */}
-            I'm <span id="name">Bill.</span> 
+            I'm <span id="name">Bill</span> 
             <br/>
             Junior Web Developer
           </p>

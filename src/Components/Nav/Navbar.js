@@ -1,6 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
+import HomeIcon from './../../Images/WhiteHouse.png';
+import WorkIcon from './../../Images/WhiteBriefCase.png';
+import ContactIcon from './../../Images/WhiteEnvelop.png';
 
 function Navbar() {
   return (
@@ -16,10 +19,27 @@ function Navbar() {
         </div>
     
         <ul className='dropdown-content noStyle'>
-          <li><NavLink exact to='/' activeClassName="selected">Home</NavLink></li>
-          <li><NavLink to='/about' activeClassName="selected">About</NavLink></li>
-          <li><NavLink to='/portfolio' activeClassName="selected">Portfolio</NavLink></li>
-          <li><NavLink to='/contact' activeClassName="selected">Contact</NavLink></li>
+          <li>
+            <NavLink exact to='/' activeClassName="selected">
+             <img src={HomeIcon} alt="HomeIcon" height='50px;' width='50px'/>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to='/about' activeClassName="selected">
+              About
+              {/* <img src={HomeIcon} alt="HomeIcon"/> */}
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to='/portfolio' activeClassName="selected">
+              <img src={WorkIcon} alt="HomeIcon"  height='50px;' width='50px'/>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to='/contact' activeClassName="selected">
+              <img src={ContactIcon} alt="HomeIcon"  height='50px;' width='50px'/>
+            </NavLink>
+          </li>
         </ul>
       </div>
     </div>

@@ -38,11 +38,13 @@
 }
 
 #name {
-  padding: 5px 10px;
+  padding: 5px 20px 5px 10px;
   background-color: var(--flame);
   background-image: linear-gradient(315deg, var(--cardinal) 0%, var(--flame) 74%);
   border-radius: 5px;
   color: white;
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
 }
 
 #btn-sect {
