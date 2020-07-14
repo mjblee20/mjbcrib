@@ -75,9 +75,9 @@
 }
 
 /* TODO: Button Hover Animations */
-#btn-sect > li > a:hover {
-  /* color: var(--cardinal); */
-} 
+/* #btn-sect > li > a:hover {
+  color: var(--cardinal);
+}  */
 
 #main-image {
   position: absolute;
