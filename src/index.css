@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Oswald:700|Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Oswald:700|Dancing+Script|Merriweather&display=swap');
 
 :root {
   --black: #000000;
@@ -20,7 +20,7 @@ body {
   /* This ensures that all pages are at lesat full pages */
   height: 100vh;
   width: 100vw;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   /* background: var(--darkgrey); */
 
   background-color: #000000;

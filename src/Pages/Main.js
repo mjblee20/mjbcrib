@@ -12,7 +12,7 @@ function Main() {
         <div id="main-title">
 
           <p id='intro'>
-            Hi,
+            Hi!
             <br/> 
             {/* TODO: Animate Bill */}
             I'm <span id="name">Bill.</span> 
