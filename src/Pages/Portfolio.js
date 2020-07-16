@@ -6,7 +6,7 @@ import './Portfolio.css';
 function Portfolio() {
   return (
     <>
-      <div id="title">
+      <div id="portfolio-title">
         My Work
       </div>
       <div className="hover-grid">
