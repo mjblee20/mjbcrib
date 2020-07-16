@@ -49,6 +49,7 @@
 }
 #contact-message {
   margin: 30px;
+  font-size: 1.2rem;
   color: rgb(245, 245, 245, 0.8);
 }
 
@@ -136,12 +137,16 @@
 
 #contact-btn {
   position: absolute;
-  color: var(--lightgrey);
+  color: var(--flame);
   border-radius: 15px;
+  border: none;
   font-size: 16px;
   padding: 8px 15px;
   bottom: 30px;
   right: 50px;
-  background-color: #44b09e;
-  background-image: linear-gradient(315deg, lightgrey 0%, darkgrey 74%);
+  background: var(--darkgrey);
+  box-shadow:  5px 5px 10px #121212, 
+             -5px -5px 10px #3a3a3a;
+  /* background-color: #44b09e;
+  background-image: linear-gradient(315deg, lightgrey 0%, darkgrey 74%); */
 }

@@ -1,9 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
-import HomeIcon from './../../Images/WhiteHouse.png';
-import WorkIcon from './../../Images/WhiteBriefCase.png';
-import ContactIcon from './../../Images/WhiteEnvelop.png';
+import HomeIcon from './../../Images/Icons/Home Icon Flame.png';
+import InfoIcon from './../../Images/Icons/Profile Icon Flame.png';
+import WorkIcon from './../../Images/Icons/Work Icon Flame.png';
+import ContactIcon from './../../Images/Icons/Contact Icon Flame.png';
 
 function Navbar() {
   return (
@@ -21,23 +22,27 @@ function Navbar() {
         <ul className='dropdown-content noStyle'>
           <li>
             <NavLink exact to='/' activeClassName="selected">
-             <img src={HomeIcon} alt="HomeIcon" height='50px;' width='50px'/>
+             <img src={HomeIcon} alt="HomeIcon" height='35px;' width='35px'/>
+             {/* TODO: show tooltip when hovered on icon. */}
+             {/* <div className="hometooltip">Home</div> */}
             </NavLink>
           </li>
           <li>
             <NavLink to='/about' activeClassName="selected">
-              About
-              {/* <img src={HomeIcon} alt="HomeIcon"/> */}
+              <img src={InfoIcon} alt="InfoIcon" height='35px;' width='35px'/>
+              {/* <div className="infotooltip">About</div> */}
             </NavLink>
           </li>
           <li>
             <NavLink to='/portfolio' activeClassName="selected">
-              <img src={WorkIcon} alt="HomeIcon"  height='50px;' width='50px'/>
+              <img src={WorkIcon} alt="WorkIcon" height='35px;' width='35px'/>
+              {/* <div className="worktooltip">Work</div> */}
             </NavLink>
           </li>
           <li>
             <NavLink to='/contact' activeClassName="selected">
-              <img src={ContactIcon} alt="HomeIcon"  height='50px;' width='50px'/>
+              <img src={ContactIcon} alt="ContactIcon" height='35px;' width='35px'/>
+              {/* <div className="contacttooltip">Contact</div> */}
             </NavLink>
           </li>
         </ul>

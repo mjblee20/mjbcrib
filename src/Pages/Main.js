@@ -22,8 +22,8 @@ function Main() {
 
           <div id="main-description">
             <ul className="noStyle">
-              <li>UW Biophysics Grad</li> /
-              <li>Full-Stack Web Developer</li> /
+              <li>UW Biophysics Grad</li> |
+              <li>Full-Stack Web Developer</li> |
               <li>Coffee Lover</li>
             </ul>
           </div>

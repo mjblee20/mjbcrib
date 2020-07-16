@@ -21,7 +21,7 @@
 
 #main-title {
   color: var(--white);
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-size: 3.5em;
   font-weight: 600;
 }
@@ -36,6 +36,7 @@
   display: flex;
   justify-content: space-between;
   font-family: 'Monserrat', sans-serif;
+  font-weight: 500;
 }
 
 #name {

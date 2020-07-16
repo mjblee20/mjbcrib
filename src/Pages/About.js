@@ -9,7 +9,7 @@ function About() {
 
       
 
-      <div id='about-title'>Small Spiel About Me...</div>
+      <div id='about-title'>Spiel About Me...</div>
 
       <div id="content">
         <div id="portrait">
