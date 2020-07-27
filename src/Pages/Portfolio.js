@@ -38,7 +38,7 @@ function Portfolio() {
                 <h3>InstaPotty</h3>
                 <div className="btn-grp">
                   <a href="https://github.com/ivancho277/fancyBathroom/"><TiSocialGithubCircular size={30}/></a>
-                  <a href="instapotty.herokuapp.com/"><TiRss size={30}/></a>
+                  <a href="https://instapotty.herokuapp.com/"><TiRss size={30}/></a>
                 </div>
               </div>
             </div>

@@ -3,8 +3,6 @@
   width: 100vw;
   padding: 80px 50px;
   display: grid;
-  grid-template-rows: 1fr 3fr;
-  grid-template-columns: 1fr 1fr;
   color: var(--white);
   background: var(--darkgrey);
 }
@@ -24,7 +22,7 @@
   flex-direction: column;
   justify-content: space-around;
   padding: 50px;
-  margin: 30px;
+  margin: 30px 80px 0 80px;
   border-radius: 50px;
   background: var(--darkgrey);
   box-shadow:  23px 23px 46px #121212, 
@@ -47,6 +45,7 @@
   text-align: center;
   margin-bottom: 40px;
 }
+
 #contact-message {
   margin: 30px;
   font-size: 1.2rem;
@@ -73,80 +72,24 @@
   margin: 10px 0px;
 }
 
-#contact-form {
-  position: relative;
-  grid-area: 1/2/1/2;
-  padding: 50px;
-  margin: 30px;
-  border-radius: 50px;
-  background: var(--darkgrey);
-  box-shadow:  23px 23px 46px #121212, 
-             -23px -23px 46px #3a3a3a;
-}
-
-#sender-info {
-  margin-bottom: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between
-}
-
-#sender-message {
-  margin-bottom: 30px;
-  z-index: 99;
-}
-
-#contact-form div input {
-  color: var(--white);
-  padding: 10px 20px;
-  margin: 10px 0px;
-  width: 100%;
-  /* border: 3px dotted var(--turqoise); */
-  font-size: 20px;
+.contact-btn {
+  width: 200px;
+  height: 50px;
+  margin: 0 auto 30px auto;
   
-  /* neomorphism style */
-  border-radius: 25px;
-  background: var(--lightgrey);
-  box-shadow: inset 12px 12px 24px #161616, 
-            inset -12px -12px 24px #363636;
-  border: none;
+  background-color: var(--flame);
+  background-image: linear-gradient(315deg, var(--cardinal) 0%, var(--flame) 74%);
+
+	text-decoration:none;
+	border-radius:4px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	font-size: 1rem;
+	padding: 6px 15px;
 }
 
-#contact-form textarea {
-  display: flex;
-  align-content: flex-start;
-
+.contact-btn > a{
   color: var(--white);
-  padding: 20px;
-  width: 100%;
-  height: 300px;
-  /* border: 3px dotted var(--turqoise); */
-  font-size: 20px;
-
-  /* neomorphism style */
-  border-radius: 20px;
-  background: var(--darkgrey);
-  box-shadow: inset 28px 28px 56px #1a1a1a, 
-            inset -28px -28px 56px #323232;
-
-  /* Removing textarea default stylings */
-  outline: none;
-  border: none;
-  resize: none;
-}
-
-#contact-btn {
-  position: absolute;
-  color: var(--flame);
-  border-radius: 15px;
-  border: none;
-  font-size: 16px;
-  padding: 8px 15px;
-  bottom: 30px;
-  right: 50px;
-  background: var(--darkgrey);
-  box-shadow:  5px 5px 10px #121212, 
-             -5px -5px 10px #3a3a3a;
-  /* background-color: #44b09e;
-  background-image: linear-gradient(315deg, lightgrey 0%, darkgrey 74%); */
+	text-decoration:none;
 }
